@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'OKCHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 색상표 */
+:root {
+    --color-green : #40A76F;
+    --color-darkgreen : #225439;
+    --color-ivory : #F9F9F9;
+
+}
+
+html, head, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 1000px;
+}
+
+a:active,
+a:hover {
+    outline: none;
+}
+    
+a {
+    color: balck;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+a:hover {
+    text-decoration: none;
+}
+
+.body-wrapper{
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 180px;
+    min-width: 1440px;
+    min-height: 780px;
+}
+
+.body-content{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+section {
+    padding: 0px 65px;
+    margin-bottom: 20px;
+    min-height: 480px;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 210px;
+    height: 210px;
+    background-image: url(../image/plant1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    font-family: 'OKCHAN';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header_box{
+    background: rgba(0, 0, 0, 0.5) ;
+    height: 100%;
+}
+
+.logo{
+    width: 100%;
+    position: absolute;
+    color: var(--color-green);
+    font-size: 60px;
+    line-height: 88px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.38);
+    top: 60px;
+    white-space: nowrap;
+}
+
+.logo_white{
+    color: white;
+}
+
+/*menu bar*/
+nav{
+    background: none;
+    position: relative;
+    min-height: 70px;
+}
+
+nav ul {
+    font-size: 0;
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    display: block;
+    font-size: 14px;
+    padding: 15px 14px;
+    transition: 0.3s linear;
+    font-family: 'ONE-Mobile-POP';
+}
+
+.menu_item:hover{
+    color: var(--color-darkgreen);
+}
+
+/*드롭메뉴바*/
+.sub_menu_ul{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: -200px;
+    width: 780px;
+    background-color: var(--color-green);
+    border-radius: 100px;
+    padding: 3px;
+    text-align: center;
+}
+
+.sub_menu_ul li{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.sub_menu_ul li a{
+    display: block;
+    margin-right: 10px;
+    color: white;
+    padding: 10px 14px;
+}
+
+.sub_menu_ul li:first-child a{
+    margin-left: 10px;
+}
+
+.sub_menu_ul li a:hover{
+    color: var(--color-darkgreen);
+}
+
+/*index.html*/
+.index_box{
+    display: flex;
+}
+
+/*main image box*/
+.main_box{
+    width: 800px;
+    min-width: 800px;
+    height: 480px;
+    background: url(../image/plant2.jpg);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-right: 60px;
+}
+
+.Shortcuts{
+    width: 400px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    vertical-align: middle;
+    font-family: 'ONE-Mobile-POP';
+}
+
+.items{
+    background-color: rgba(249, 249, 249, 0.75);
+    border-radius: 15px;
+    text-align: center;
+    min-height: 134px;
+    margin-bottom: 15px;
+}
+
+.items:last-child{
+    margin-bottom: 0px;
+}
+
+.items p{
+    padding-top: 30px;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.items a{
+    color: var(--color-darkgreen);
+    text-decoration: underline 2px var(--color-darkgreen);
+    text-underline-position: under;
+}
+
+.last_items{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    min-height: 134px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.half_items{
+    background-color: rgba(249, 249, 249, 0.75);
+    border-radius: 15px;
+    text-align: center;
+    width: 195px;
+    min-height: 134px;
+    margin-bottom: 15px;
+}
+
+.half_items p{
+    margin-top: 50px;
+}
+
+.half_items a{
+    color: black;
+}
+
+/*index.html 오른쪽 박스*/
+.main_right_box{
+    width: 476px;
+    min-width: 476px;
+}
+
+.logo_small{
+    font-family: 'OKCHAN';
+    font-size: 20px;
+    color: var(--color-darkgreen);
+}
+
+.logo_small span{
+    color: var(--color-green);
+}
+
+.main_right_items{
+    background-color: var(--color-ivory);
+    border-radius: 15px;
+    text-align: center;
+    min-height: 165px;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+}
+
+.main_right_items p{
+    text-align: left;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.right_last_items{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    min-height: 134px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_half_items_left{
+    border: 2px solid var(--color-green);
+    border-radius: 15px;
+    text-align: center;
+    width: 227px;
+    min-height: 134px;
+    margin-bottom: 15px;
+    opacity:0.75;
+}
+
+.right_half_items_right{
+    background-color: var(--color-green);
+    border-radius: 15px;
+    text-align: center;
+    width: 227px;
+    min-height: 134px;
+    margin-bottom: 15px;
+    opacity:0.75;
+}
+
+.items_title{
+    font-family: 'ONE-Mobile-POP';
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.items_link, .items_link_white{
+    margin-top: 0px;
+}
+
+.items_link > a{
+    font-family: 'OKCHAN';
+    font-size: 20px;
+    color: #40A76F;
+}
+
+.items_link_white > a{
+    font-family: 'OKCHAN';
+    font-size: 20px;
+    color: white;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background: var(--color-darkgreen);
+}
+
+.center_info_title{
+    font-family: 'OKCHAN';
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.center_info{
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-size: 24px;
+}
+
+.link{
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.link > a{
+    color: white;
+}
