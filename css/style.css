@@ -49,143 +49,22 @@ a:hover {
     text-decoration: none;
 }
 
-.body-wrapper{
-    margin: 0 auto;
-    min-height: 100%;
-    position: relative;
-    box-sizing: border-box;
-    padding: 0 180px;
-    min-width: 1440px;
-    min-height: 780px;
-}
-
-.body-content{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 70px;
-}
-
-section {
-    padding: 0px 65px;
-    margin-bottom: 20px;
-    min-height: 480px;
-}
-
-.header{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-width: 1440px;
-    min-height: 210px;
-    height: 210px;
-    background-image: url(../image/plant1.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
-    font-family: 'OKCHAN';
-    font-weight: normal;
-    font-style: normal;
-}
-
-.header_box{
-    background: rgba(0, 0, 0, 0.5) ;
-    height: 100%;
-}
-
-.logo{
-    width: 100%;
-    position: absolute;
-    color: var(--color-green);
-    font-size: 60px;
-    line-height: 88px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.38);
-    top: 60px;
-    white-space: nowrap;
-}
-
-.logo_white{
-    color: white;
-}
-
-/*menu bar*/
 nav{
-    background: none;
-    position: relative;
-    min-height: 70px;
-}
-
-nav ul {
-    font-size: 0;
-    margin: 0;
-    margin-right: 30px;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-}
-
-nav ul li a {
-    color: black;
-    display: block;
-    font-size: 14px;
-    padding: 15px 14px;
-    transition: 0.3s linear;
-    font-family: 'ONE-Mobile-POP';
-}
-
-.menu_item:hover{
-    color: var(--color-darkgreen);
-}
-
-/*드롭메뉴바*/
-.sub_menu_ul{
-    display: none;
-    position: absolute;
-    top: 40px;
-    right: -200px;
-    width: 780px;
-    background-color: var(--color-green);
-    border-radius: 100px;
-    padding: 3px;
-    text-align: center;
-}
-
-.sub_menu_ul li{
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-}
-
-.sub_menu_ul li a{
-    display: block;
-    margin-right: 10px;
-    color: white;
-    padding: 10px 14px;
-}
-
-.sub_menu_ul li:first-child a{
-    margin-left: 10px;
-}
-
-.sub_menu_ul li a:hover{
-    color: var(--color-darkgreen);
+    margin-bottom: 30px;
 }
 
 /*index.html*/
 .index_box{
+    width: 100%;
     display: flex;
+    padding-left: 0;
+    margin-left: 0;
+    margin: 0 auto;
 }
 
 /*main image box*/
 .main_box{
-    width: 800px;
-    min-width: 800px;
+    width: 1000px;
     height: 480px;
     background: url(../image/plant2.jpg);
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
@@ -209,7 +88,7 @@ nav ul li a {
     background-color: rgba(249, 249, 249, 0.75);
     border-radius: 15px;
     text-align: center;
-    min-height: 134px;
+    height: 134px;
     margin-bottom: 15px;
 }
 
@@ -244,7 +123,7 @@ nav ul li a {
     border-radius: 15px;
     text-align: center;
     width: 195px;
-    min-height: 134px;
+    height: 134px;
     margin-bottom: 15px;
 }
 
@@ -259,7 +138,6 @@ nav ul li a {
 /*index.html 오른쪽 박스*/
 .main_right_box{
     width: 476px;
-    min-width: 476px;
 }
 
 .logo_small{
@@ -304,9 +182,10 @@ nav ul li a {
     border-radius: 15px;
     text-align: center;
     width: 227px;
-    min-height: 134px;
+    height: 134px;
     margin-bottom: 15px;
     opacity:0.75;
+    margin-right: 5px;
 }
 
 .right_half_items_right{
@@ -314,7 +193,7 @@ nav ul li a {
     border-radius: 15px;
     text-align: center;
     width: 227px;
-    min-height: 134px;
+    height: 134px;
     margin-bottom: 15px;
     opacity:0.75;
 }
@@ -341,39 +220,130 @@ nav ul li a {
     color: white;
 }
 
-/*footer*/
 
-.footer{
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+/*화면 비율이 작아질 경우 스타일 변경*/
+@media screen and (max-width: 1500px){
 
-    background: var(--color-darkgreen);
-}
+    body{
+        overflow-x: hidden;
+    }
 
-.center_info_title{
-    font-family: 'OKCHAN';
-    text-align: center;
-    padding-top: 20px;
-    color: white;
-    font-size: 20px;
-}
+    .main_box{
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+        margin-right: 20px;
+        padding: 0px;
+    }
 
-.center_info{
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
-    text-align: center;
-    padding-top: 25px;
-    color: white;
-    font-size: 24px;
-}
+    .Shortcuts{
+        width: 400px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        vertical-align: middle;
+        font-family: 'ONE-Mobile-POP';
+        
+    }
+    
+    .items{
+        background-color: rgba(249, 249, 249, 0.75);
+        border-radius: 15px;
+        text-align: center;
+        height: 120px;
+        margin-bottom: 15px;
+        background: url(../image/plant_back6.jpg);
+        background-position: top;
+    }
 
-.link{
-    padding: 0px 10px;
-    text-decoration: none;
-}
+    .items:nth-child(2){
+        background: url(../image/plant_back6.jpg);
+        background-position: center;
+    }
 
-.link > a{
-    color: white;
+    .half_items{
+        border-radius: 15px;
+        text-align: center;
+        width: 192px;
+        height: 110px;
+        margin-bottom: 15px;
+        background: url(../image/plant_back6.jpg);
+        background-position: bottom;
+    }
+
+    .half_items p{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    .body-wrapper{
+        margin: 0 auto;
+        min-height: 100%;
+    }
+
+    .body-content{
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    /*index.html 오른쪽 박스*/
+    .main_right_box{
+        width: 380px;
+    }
+
+    .logo_small{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .main_right_items{
+        background-color: var(--color-ivory);
+        border-radius: 15px;
+        text-align: center;
+        height: 234px;
+        margin-bottom: 15px;
+        padding: 10px 30px;
+    }
+
+    .main_right_items p{
+        font-size: 20px;
+    }
+    
+    .right_last_items{
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+        text-align: center;
+        min-height: 134px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .right_half_items_left{
+        border: 2px solid var(--color-green);
+        border-radius: 15px;
+        text-align: center;
+        width: 170px;
+        height: 110px;
+        margin-bottom: 15px;
+        opacity:0.75;
+        margin-right: 5px;
+    }
+
+    .right_half_items_right{
+        background-color: var(--color-green);
+        border-radius: 15px;
+        text-align: center;
+        width: 170px;
+        height: 110px;
+        margin-bottom: 15px;
+        opacity:0.75;
+    }
+    
+    .items_title{
+        font-size: 16px;
+    }
+
 }

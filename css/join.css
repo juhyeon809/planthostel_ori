@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'OKCHAN';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKCHAN.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 색상표 */
+:root {
+    --color-green : #40A76F;
+    --color-darkgreen : #225439;
+    --color-ivory : #F9F9F9;
+
+}
+
+html, head, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 1000px;
+}
+
+a:active,
+a:hover {
+    outline: none;
+}
+    
+a {
+    color: balck;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+a:hover {
+    text-decoration: none;
+}
+
+.join-content{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo_top{
+    font-family: 'OKCHAN';
+    color: var(--color-darkgreen);
+    font-size: 30px;
+}
+
+.logo_top_span{
+    color: var(--color-green);
+}
+
+.join_box{
+    display: block;
+    width: 476px;
+    height: 1340px;
+    background: rgba(249, 249, 249, 0.75);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding-top: 70px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.join_box input{
+    display: block;
+    margin: 0 auto;
+    width: 396px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(64, 167, 111, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+}
+
+.join_box input[type="password"]{
+    font-family: '맑은 고딕';
+    font-size: 14px;
+}
+
+.join_box input::placeholder{
+    text-indent: 10px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+}
+
+.join_box input:focus{
+    outline: none;
+}
+
+.join_box button{
+    box-sizing: border-box;
+    width: 396px;
+    height: 65.5px;
+
+    background: rgba(64, 167, 111, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top: 15px;
+    border: none;
+    font-family: 'OKCHAN';
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.join_box p{
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 16px;
+}
+
+.join_box p span{
+    color: var(--color-green);
+    text-decoration: underline;
+    font-weight: 500;
+}
