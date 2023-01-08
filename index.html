@@ -1,117 +1,118 @@
 <!-- html 틀 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>플랜트호스텔</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
-    <!-- 2. header와 footer는 모든 페이지 통일 -->
-    <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
-    <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
-    <!-- 5. css에 색상변수 만들어서 사용하기 -->
-    <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-</head>
-<body>
-    <!-- header [class명 header]-->
-    <header class="header">
-        <div class="header_box">
-            <a href="./index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
-        </div>
-    </header>
-    <!-- header 끝 -->
-
-    <nav>
-        <div class="container">
-            <ul class="menu_bar">
-                <li class="sub_menu"><a href="#" class="menu_item">MENU</a>
-                    <ul class="sub_menu_ul">
-                        <li><a href="#">병원예약</a></li>
-                        <li><a href="#">호텔예약</a></li>
-                        <li><a href="#">픽업서비스</a></li>
-                        <li><a href="#">이용후기</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">이용안내</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">오시는길</a></li>
-                        <li><a href="#">내정보</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="menu_item">HOS</a></li>
-                <li><a href="#" class="menu_item">TEL</a></li>
-                <li><a href="./login/login.html" class="menu_item">LOGIN</a></li>
-            </ul>
-        </div>
-    </nav>
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
-        $('nav li').hover(
-            function() {
-                $('ul', this).stop().slideDown(300);
-            },
-            function() {
-                $('ul', this).stop().slideUp(300);
-            }
-        );
-    </script>
-
-    <!-- body & footer [class명 body-wrapper]-->
-    <div class="body-wrapper">
-        <!-- body의 전체 뼈대 [class명 body-content] -->
-        <section class="body-content index_box">
-            <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
-            <div class="main_box">
-                <div class="Shortcuts">
-                    <div class="items">
-                        <p>Plant HOS & TEL이 궁금하다면?</p>
-                        <a href="#">자주 묻는 질문</a>
-                    </div>
-                    <div class="items">
-                        <p>반려식물을 키우고 계신가요?</p>
-                        <a href="#">반려식물 등록하러 가기</a>
-                    </div>
-                    <div class="last_items">
-                        <div class="half_items">
-                            <p><a href="#">호스텔 내부시설</a></p>
-                        </div>
-                        <div class="half_items">
-                            <p><a href="#">예약내역</a></p>
-                        </div>
-                    </div>
-                </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>플랜트호스텔</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
+        <!-- 2. header와 footer는 모든 페이지 통일 -->
+        <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
+        <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
+        <!-- 5. css에 색상변수 만들어서 사용하기 -->
+        <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
+    </head>
+    <body>
+        <!-- header [class명 header]-->
+        <header class="header">
+            <div class="header_box">
+                <a href="./index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
             </div>
+        </header>
+        <!-- header 끝 -->
 
-            <div class="main_right_box">
-                <p class="logo_small">Plant <span>HOS & TEL</span></p>
-                <div class="main_right_items">
-                    <p>Plant HOSTEL 이용방법!</p>
-                    <p>
-                        1. 반려식물의 병원예약은 HOS에서 가능합니다<br>
-                        2. 반려식물의 호텔예약은 TEL에서 가능합니다<br>
-                        3. 반려식물의 정보등록은 로그인을 한 후 등록합니다<br>
-                        4. 모든 서비스는 로그인을 하신 뒤 이용가능합니다
-                    </p>
-                </div>
-                <div class="right_last_items">
-                    <div class="right_half_items_left">
-                        <p class="items_title">반려식물 병원예약</p>
-                        <p class="items_link"><a href="#">HOS</a></p>
-                    </div>
-                    <div class="right_half_items_right">
-                        <p class="items_title">반려식물 호텔예약</p>
-                        <p class="items_link_white"><a href="#">TEL</a></p>
-                    </div>
-                </div>
+        <nav>
+            <div class="container">
+                <ul class="menu_bar">
+                    <li class="sub_menu">
+                        <a href="#" class="menu_item">MENU</a>
+                        <ul class="sub_menu_ul">
+                            <li><a href="#">병원예약</a></li>
+                            <li><a href="#">호텔예약</a></li>
+                            <li><a href="#">픽업서비스</a></li>
+                            <li><a href="#">이용후기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">내정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu_item">HOS</a></li>
+                    <li><a href="#" class="menu_item">TEL</a></li>
+                    <li><a href="./login/login.html" class="menu_item">LOGIN</a></li>
+                </ul>
             </div>
-            <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+        </nav>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $("nav li").hover(
+                function () {
+                    $("ul", this).stop().slideDown(300);
+                },
+                function () {
+                    $("ul", this).stop().slideUp(300);
+                }
+            );
+        </script>
 
-        </section>
-        <!-- body의 전체 뼈대 끝 -->
+        <!-- body [class명 body-wrapper]-->
+        <div class="body-wrapper">
+            <!-- body의 전체 뼈대 [class명 body-content] -->
+            <section class="body-content index_box">
+                <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+                <div class="main_box">
+                    <div class="Shortcuts">
+                        <div class="items">
+                            <p>Plant HOS & TEL이 궁금하다면?</p>
+                            <a href="#">자주 묻는 질문</a>
+                        </div>
+                        <div class="items">
+                            <p>반려식물을 키우고 계신가요?</p>
+                            <a href="#">반려식물 등록하러 가기</a>
+                        </div>
+                        <div class="last_items">
+                            <div class="half_items">
+                                <p><a href="#">호스텔 내부시설</a></p>
+                            </div>
+                            <div class="half_items">
+                                <p><a href="#">예약내역</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="main_right_box">
+                    <p class="logo_small">Plant <span>HOS & TEL</span></p>
+                    <div class="main_right_items">
+                        <p>Plant HOSTEL 이용방법!</p>
+                        <p>
+                            1. 반려식물의 병원예약은 HOS에서 가능합니다<br />
+                            2. 반려식물의 호텔예약은 TEL에서 가능합니다<br />
+                            3. 반려식물의 정보등록은 로그인을 한 후 등록합니다<br />
+                            4. 모든 서비스는 로그인을 하신 뒤 이용가능합니다
+                        </p>
+                    </div>
+                    <div class="right_last_items">
+                        <div class="right_half_items_left">
+                            <p class="items_title">반려식물 병원예약</p>
+                            <p class="items_link"><a href="#">HOS</a></p>
+                        </div>
+                        <div class="right_half_items_right">
+                            <p class="items_title">반려식물 호텔예약</p>
+                            <p class="items_link_white"><a href="#">TEL</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+            </section>
+            <!-- body의 전체 뼈대 끝 -->
+        </div>
+        <!-- body 끝 -->
         <!-- footer -->
         <footer class="footer">
             <div class="center_info_title">PALNT HOSTEL</div>
@@ -125,7 +126,5 @@
             <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
         </footer>
         <!-- footer 끝 -->
-    </div>
-    <!-- body & footer 끝 -->
-</body>
+    </body>
 </html>
