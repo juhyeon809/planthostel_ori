@@ -1,0 +1,21 @@
+@import url(./myinfo.css);
+
+.flex_center {
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.flex_center button {
+    margin: 20px;
+}
+
+.address_btn {
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: rgba(64, 167, 111, 0.8);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: white;
+    width: 18%;
+}

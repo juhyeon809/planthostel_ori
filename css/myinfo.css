@@ -1,0 +1,82 @@
+@import url(./mypage.css);
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_area {
+    display: flex;
+}
+
+.btn_area button {
+    border: none;
+    box-sizing: border-box;
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background: var(--color-darkgreen);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.btn_area .myinfo_modify_btn {
+    margin-right: 10px;
+}
+
+.myinfo_list {
+    box-sizing: border-box;
+    width: 100%;
+}
+.myinfo_row {
+    margin-bottom: 20px;
+}
+
+.myinfo_row label {
+    display: flex;
+}
+
+.myinfo_row .label_title {
+    padding: 10px 20px;
+    width: 10%;
+    color: #286946;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--color-mint);
+}
+
+.myinfo_row input:not(.address_btn) {
+    box-sizing: border-box;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid var(--color-mint);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 16px;
+}
+
+.myinfo_row input[name="id"] {
+    background: rgba(64, 167, 111, 0.2);
+}
+
+.detail_address {
+    display: flex;
+}
+
+.flex_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.flex_input input {
+    height: 43px;
+}
+
+.flex_input input:first-child {
+    margin-right: 10px;
+}

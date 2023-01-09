@@ -62,17 +62,21 @@
         <!-- body & footer [class명 body-wrapper]-->
         <div class="body-wrapper">
             <!-- body의 전체 뼈대 [class명 body-content] -->
-            <section class="body-content login-content">
+            <!-- mypage는 요소를 세로로 나열하기 때문에 flex-direction을 column으로 설정 [class명 mypage-content] -->
+            <section class="body-content mypage-content">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+
                 <!-- 마이페이지 메인 박스 [class명 main_box]-->
                 <div class="main_box">
                     <!-- 작게 보여질 내 정보 [class명 member_info_box] -->
-                    <div class="member_info_box">ID : <span>회원1</span> / <span>김사과님</span></div>
-                    <!-- 마이페이지 리스트 [class명 mypage_list_box] -->
-                    <div class="mypage_list_box">
+                    <div class="member_info_box">
+                        ID : <span class="userid">회원1</span> / <span class="name">김사과님</span>
+                    </div>
+                    <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
+                    <div class="mypage_box">
                         <ul class="mypage_list">
-                            <a href=""><li>내 정보</li></a>
+                            <a href="./myinfo.html"><li>내 정보</li></a>
                             <a href=""><li>반려식물 등록</li></a>
                             <a href=""><li>예약 내역</li></a>
                             <a href=""><li>이용 약관 / 개인정보방침</li></a>
