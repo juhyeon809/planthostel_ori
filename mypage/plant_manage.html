@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 내 정보 수정</title>
+        <title>플랜트호스텔 | 반려식물 관리하기</title>
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/mypage/mypage.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
@@ -14,8 +14,6 @@
         <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
         <!-- 5. css에 색상변수 만들어서 사용하기 -->
         <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
-        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-        <script src="../js/postcode.js"></script>
     </head>
     <body>
         <!-- header [class명 header]-->
@@ -68,6 +66,7 @@
             <section class="body-content mypage-content">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+
                 <!-- 마이페이지 메인 박스 [class명 main_box]-->
                 <div class="main_box">
                     <!-- 작게 보여질 내 정보 [class명 member_info_box] -->
@@ -76,85 +75,42 @@
                     </div>
                     <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
                     <div class="mypage_box">
-                        <ul class="myinfo_list">
-                            <li class="myinfo_row">
-                                <label for="id">
-                                    <div class="label_title">ID</div>
-                                    <input type="text" name="id" id="id" value="apple123" disabled />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="password">
-                                    <div class="label_title">PW</div>
-                                    <input type="password" name="passwod" id="password" />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="password_check">
-                                    <div class="label_title">PW Check</div>
-                                    <input type="password" name="password_check" id="password_check" />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="name">
-                                    <div class="label_title">name</div>
-                                    <input type="text" name="name" id="name" value="김사과" />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="email">
-                                    <div class="label_title">E-mail</div>
-                                    <input type="text" name="email" id="email" value="apple123@naver.com" />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="hp">
-                                    <div class="label_title">H.P</div>
-                                    <input type="text" name="hp" id="hp" value="010-1234-1234" />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="zipcode">
-                                    <div class="label_title">Zipcode</div>
-                                    <div class="flex_input">
-                                        <input
-                                            type="text"
-                                            id="sample6_postcode"
-                                            name="zipcode"
-                                            id="zipcode"
-                                            value="12345"
-                                            disabled
-                                        />
-                                        <input
-                                            type="button"
-                                            class="address_btn"
-                                            onclick="sample6_execDaumPostcode()"
-                                            value="우편번호 찾기"
-                                        />
-                                    </div>
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="address">
-                                    <div class="label_title">Address</div>
-                                    <input type="text" id="sample6_address" value="서울특별시 강남구" disabled /><br />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <div class="detail_address">
-                                    <div class="label_title"></div>
-                                    <div class="flex_input">
-                                        <input type="text" id="sample6_detailAddress" value="역삼1동 강남대로 362-33" />
-                                        <input type="text" id="sample6_extraAddress" value="106동 1103호" disabled />
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="message">현재 등록된 반려식물은 총 3개 입니다. / care service 0개 진행중</div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">반려식물 별명1</div>
+                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
+                                정보 자세히 보기
+                            </button>
+                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
+                                식물 정보 수정
+                            </button>
+                        </div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">반려식물 별명2</div>
+                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
+                                정보 자세히 보기
+                            </button>
+                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
+                                식물 정보 수정
+                            </button>
+                        </div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">반려식물 별명3</div>
+                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
+                                정보 자세히 보기
+                            </button>
+                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
+                                식물 정보 수정
+                            </button>
+                        </div>
+                        <div class="btn_area">
+                            <button>케어 상담예약</button>
+                            <button onclick="location.href='./plant_regist.html'">반려식물 등록하기</button>
+                        </div>
                     </div>
-                </div>
-                <div class="btn_area flex_center">
-                    <button onclick="location.href='myinfo.html'">취소</button>
-                    <button>완료</button>
                 </div>
                 <!-- 마이페이지 메인 박스 끝 -->
             </section>

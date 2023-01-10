@@ -1,3 +1,9 @@
+@import url(./myinfo.css);
+@import url(./myinfo_modify.css);
+@import url(./plant_manage.css);
+@import url(./plant_regist.css);
+@import url(./plant_detail.css);
+
 .menu_bar > li:last-child a {
     color: var(--color-green);
 }
@@ -57,4 +63,12 @@
 
 .mypage_box .mypage_list a:visited {
     color: black;
+}
+
+input:disabled {
+    color: black;
+}
+
+input {
+    height: 50px;
 }

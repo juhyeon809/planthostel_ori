@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 내 정보 수정</title>
+        <title>플랜트호스텔 | 반려식물 등록하기</title>
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/mypage/mypage.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
@@ -14,8 +14,6 @@
         <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
         <!-- 5. css에 색상변수 만들어서 사용하기 -->
         <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
-        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-        <script src="../js/postcode.js"></script>
     </head>
     <body>
         <!-- header [class명 header]-->
@@ -76,85 +74,56 @@
                     </div>
                     <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
                     <div class="mypage_box">
-                        <ul class="myinfo_list">
-                            <li class="myinfo_row">
-                                <label for="id">
-                                    <div class="label_title">ID</div>
-                                    <input type="text" name="id" id="id" value="apple123" disabled />
+                        <div class="message">김사과 님의 소중한 반려식물의 정보를 수정해주세요!</div>
+                        <ul class="plant_info_list">
+                            <li class="plant_info_row">
+                                <label for="nickname">
+                                    <div class="label_title">반려식물 별명</div>
+                                    <input type="text" name="nickname" id="nickname" value="준인장" />
                                 </label>
                             </li>
-                            <li class="myinfo_row">
-                                <label for="password">
-                                    <div class="label_title">PW</div>
-                                    <input type="password" name="passwod" id="password" />
+                            <li class="plant_info_row">
+                                <label for="species">
+                                    <div class="label_title">종</div>
+                                    <input type="text" name="species" id="species" value="선인장" />
                                 </label>
                             </li>
-                            <li class="myinfo_row">
-                                <label for="password_check">
-                                    <div class="label_title">PW Check</div>
-                                    <input type="password" name="password_check" id="password_check" />
+                            <li class="plant_info_row">
+                                <label for="flowerpot_size">
+                                    <div class="label_title">화분사이즈</div>
+                                    <input type="text" name="flowerpot_size" id="flowerpot_size" value="소형" />
                                 </label>
                             </li>
-                            <li class="myinfo_row">
-                                <label for="name">
-                                    <div class="label_title">name</div>
-                                    <input type="text" name="name" id="name" value="김사과" />
+                            <li class="plant_info_row">
+                                <label for="age">
+                                    <div class="label_title">나이</div>
+                                    <input type="text" name="age" id="age" value="3개월" />
                                 </label>
                             </li>
-                            <li class="myinfo_row">
-                                <label for="email">
-                                    <div class="label_title">E-mail</div>
-                                    <input type="text" name="email" id="email" value="apple123@naver.com" />
+                            <li class="plant_info_row">
+                                <label for="disease">
+                                    <div class="label_title">보유 병명</div>
+                                    <input type="text" name="disease" id="disease" value="없음" />
                                 </label>
                             </li>
-                            <li class="myinfo_row">
-                                <label for="hp">
-                                    <div class="label_title">H.P</div>
-                                    <input type="text" name="hp" id="hp" value="010-1234-1234" />
+                            <li class="plant_info_row">
+                                <label for="watering">
+                                    <div class="label_title">물 주기</div>
+                                    <input type="text" name="watering" id="watering" value="2일에 한 번" />
                                 </label>
                             </li>
-                            <li class="myinfo_row">
-                                <label for="zipcode">
-                                    <div class="label_title">Zipcode</div>
-                                    <div class="flex_input">
-                                        <input
-                                            type="text"
-                                            id="sample6_postcode"
-                                            name="zipcode"
-                                            id="zipcode"
-                                            value="12345"
-                                            disabled
-                                        />
-                                        <input
-                                            type="button"
-                                            class="address_btn"
-                                            onclick="sample6_execDaumPostcode()"
-                                            value="우편번호 찾기"
-                                        />
-                                    </div>
+                            <li class="plant_info_row">
+                                <label for="etc">
+                                    <div class="label_title">그 외 정보</div>
+                                    <textarea class="etc_info" name="etc" id="etc"> </textarea>
                                 </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <label for="address">
-                                    <div class="label_title">Address</div>
-                                    <input type="text" id="sample6_address" value="서울특별시 강남구" disabled /><br />
-                                </label>
-                            </li>
-                            <li class="myinfo_row">
-                                <div class="detail_address">
-                                    <div class="label_title"></div>
-                                    <div class="flex_input">
-                                        <input type="text" id="sample6_detailAddress" value="역삼1동 강남대로 362-33" />
-                                        <input type="text" id="sample6_extraAddress" value="106동 1103호" disabled />
-                                    </div>
-                                </div>
                             </li>
                         </ul>
+                        <div class="btn_area">
+                            <button onclick="location.href='./plant_manage.html'">취소</button>
+                            <button>완료</button>
+                        </div>
                     </div>
-                </div>
-                <div class="btn_area flex_center">
-                    <button onclick="location.href='myinfo.html'">취소</button>
-                    <button>완료</button>
                 </div>
                 <!-- 마이페이지 메인 박스 끝 -->
             </section>
