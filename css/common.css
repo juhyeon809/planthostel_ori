@@ -27,6 +27,7 @@
     --color-ivory: #f9f9f9;
     --color-lightgreen: rgb(221, 237, 227);
     --color-ligthgray: rgb(249, 249, 249);
+    --color-mint: rgba(64, 167, 111, 0.5);
 }
 
 html,
@@ -48,13 +49,22 @@ a:hover {
 }
 
 a {
-    color: balck;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
 }
 
 /*body 틀*/

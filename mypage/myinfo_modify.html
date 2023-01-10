@@ -1,0 +1,178 @@
+<!-- html 틀 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>플랜트호스텔 | 내 정보 수정</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/mypage/mypage.css" />
+        <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
+        <!-- 2. header와 footer는 모든 페이지 통일 -->
+        <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
+        <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
+        <!-- 5. css에 색상변수 만들어서 사용하기 -->
+        <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script src="../js/postcode.js"></script>
+    </head>
+    <body>
+        <!-- header [class명 header]-->
+        <header class="header">
+            <div class="header_box">
+                <a href="../index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
+            </div>
+        </header>
+        <!-- header 끝 -->
+
+        <nav>
+            <div class="container">
+                <ul class="menu_bar">
+                    <li class="sub_menu">
+                        <a href="#" class="menu_item">MENU</a>
+                        <ul class="sub_menu_ul">
+                            <li><a href="#">병원예약</a></li>
+                            <li><a href="#">호텔예약</a></li>
+                            <li><a href="#">픽업서비스</a></li>
+                            <li><a href="#">이용후기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">내정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu_item">HOS</a></li>
+                    <li><a href="#" class="menu_item">TEL</a></li>
+                    <li><a href="../join/join.html" class="menu_item">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $("nav li").hover(
+                function () {
+                    $("ul", this).stop().slideDown(300);
+                },
+                function () {
+                    $("ul", this).stop().slideUp(300);
+                }
+            );
+        </script>
+
+        <!-- body & footer [class명 body-wrapper]-->
+        <div class="body-wrapper">
+            <!-- body의 전체 뼈대 [class명 body-content] -->
+            <!-- mypage는 요소를 세로로 나열하기 때문에 flex-direction을 column으로 설정 [class명 mypage-content] -->
+            <section class="body-content mypage-content">
+                <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+                <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+                <!-- 마이페이지 메인 박스 [class명 main_box]-->
+                <div class="main_box">
+                    <!-- 작게 보여질 내 정보 [class명 member_info_box] -->
+                    <div class="member_info_box">
+                        ID : <span class="userid">회원1</span> / <span class="name">김사과님</span>
+                    </div>
+                    <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
+                    <div class="mypage_box">
+                        <ul class="myinfo_list">
+                            <li class="myinfo_row">
+                                <label for="id">
+                                    <div class="label_title">ID</div>
+                                    <input type="text" name="id" id="id" value="apple123" disabled />
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <label for="password">
+                                    <div class="label_title">PW</div>
+                                    <input type="password" name="passwod" id="password" />
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <label for="password_check">
+                                    <div class="label_title">PW Check</div>
+                                    <input type="password" name="password_check" id="password_check" />
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <label for="name">
+                                    <div class="label_title">name</div>
+                                    <input type="text" name="name" id="name" value="김사과" />
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <label for="email">
+                                    <div class="label_title">E-mail</div>
+                                    <input type="text" name="email" id="email" value="apple123@naver.com" />
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <label for="hp">
+                                    <div class="label_title">H.P</div>
+                                    <input type="text" name="hp" id="hp" value="010-1234-1234" />
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <label for="zipcode">
+                                    <div class="label_title">Zipcode</div>
+                                    <div class="flex_input">
+                                        <input
+                                            type="text"
+                                            id="sample6_postcode"
+                                            name="zipcode"
+                                            id="zipcode"
+                                            value="12345"
+                                            disabled
+                                        />
+                                        <input
+                                            type="button"
+                                            class="address_btn"
+                                            onclick="sample6_execDaumPostcode()"
+                                            value="우편번호 찾기"
+                                        />
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <label for="address">
+                                    <div class="label_title">Address</div>
+                                    <input type="text" id="sample6_address" value="서울특별시 강남구" disabled /><br />
+                                </label>
+                            </li>
+                            <li class="myinfo_row">
+                                <div class="detail_address">
+                                    <div class="label_title"></div>
+                                    <div class="flex_input">
+                                        <input type="text" id="sample6_detailAddress" value="역삼1동 강남대로 362-33" />
+                                        <input type="text" id="sample6_extraAddress" value="106동 1103호" disabled />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_area flex_center">
+                    <button onclick="location.href='myinfo.html'">취소</button>
+                    <button>완료</button>
+                </div>
+                <!-- 마이페이지 메인 박스 끝 -->
+            </section>
+            <!-- body의 전체 뼈대 끝 -->
+        </div>
+        <!-- body 끝 -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="center_info_title">PALNT HOSTEL</div>
+            <div class="center_info">
+                <span class="link"><a href="#">운영정책</a></span>
+                <span class="link"><a href="#">브랜드보호정책</a></span>
+                <span class="link"><a href="#">이용약관</a></span>
+                <span class="link"><a href="#">공지사항</a></span>
+                <span class="link"><a href="#">개인정보처리방침</a></span>
+            </div>
+            <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
+        </footer>
+        <!-- footer 끝 -->
+    </body>
+</html>
