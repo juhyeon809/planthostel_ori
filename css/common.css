@@ -26,7 +26,8 @@
     --color-darkgreen: #225439;
     --color-ivory: #f9f9f9;
     --color-lightgreen: rgb(221, 237, 227);
-    --color-lightgray: rgb(249, 249, 249);
+    --color-ligthgray: rgb(249, 249, 249);
+    --color-mint: rgba(64, 167, 111, 0.5);
 }
 
 html,
@@ -57,6 +58,15 @@ a:hover {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
 /*body 틀*/
 .body-wrapper {
     margin: 0 auto;
@@ -71,7 +81,7 @@ a:hover {
 .body-content {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 section {

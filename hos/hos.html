@@ -5,16 +5,16 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔</title>
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/common.css" />
+        <title>플랜트호스텔 | 병원예약</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/hos/hos.css" />
+
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
         <!-- 2. header와 footer는 모든 페이지 통일 -->
         <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
         <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
         <!-- 5. css에 색상변수 만들어서 사용하기 -->
         <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
     </head>
     <body>
         <!-- header [class명 header]-->
@@ -39,12 +39,12 @@
                             <li><a href="#">이용안내</a></li>
                             <li><a href="#">이벤트</a></li>
                             <li><a href="#">오시는길</a></li>
-                            <li><a href="./mypage/mypage.html">내정보</a></li>
+                            <li><a href="#">내정보</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="menu_item">HOS</a></li>
-                    <li><a href="./tel/tel.html" class="menu_item">TEL</a></li>
-                    <li><a href="./login/login.html" class="menu_item">LOGIN</a></li>
+                    <li><a href="#" class="menu_item">TEL</a></li>
+                    <li><a href="#" class="menu_item">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,51 +63,60 @@
         <!-- body [class명 body-wrapper]-->
         <div class="body-wrapper">
             <!-- body의 전체 뼈대 [class명 body-content] -->
-            <section class="body-content index_box">
+            <section class="body-content hos_box">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
-                <div class="main_box">
-                    <div class="Shortcuts">
-                        <div class="items">
-                            <p>Plant HOS & TEL이 궁금하다면?</p>
-                            <a href="#">자주 묻는 질문</a>
+                <!-- 식물병원 예약 타이틀 [class명 title_box] -->
+                <div class="title_box">
+                    <p class="title">PLANT <span class="title_color">HOS</span></p>
+                    <div class="img_box">
+                        <img src="../image/plant3.jpg" alt="병원 이미지">
+                    </div>
+                </div>
+                <!-- 식물병원 예약 타이틀 끝 -->
+                <!-- 병원 예약 파트 [class명 hos_reservation] -->
+                <div class="hos_reservation">
+                    <p class="hos_reservation_title">▷ 반려식물 병원 예약 ◁</p>
+                    <div class="hos_mini_box">
+                        <p class="sub_title">회원 정보</p>
+                        <div class="user_info">
+                            <p>이름 : <span>김사과</span></p>
+                            <p>이메일 : <span>apple@naver.com</span></p>
+                            <p>휴대폰번호 : <span>010 - 1111 - 1111</span></p>
+                            <p>반려식물 등록 수 : <span>3</span></p>
                         </div>
-                        <div class="items">
-                            <p>반려식물을 키우고 계신가요?</p>
-                            <a href="#">반려식물 등록하러 가기</a>
-                        </div>
-                        <div class="last_items">
-                            <div class="half_items">
-                                <p><a href="#">호스텔 내부시설</a></p>
+                    </div>
+                    <div class="hos_mini_box">
+                        <p class="sub_title">병원 방문 예정일을 선택해주세요</p>
+                        <div class="calendar">
+                            <p class="calendar_title">진료 가능날짜</p>
+                            <div class="date_YN">
+                                <span class="YN_box">가능</span>
+                                <span class="YN_box">불가능</span>
                             </div>
-                            <div class="half_items">
-                                <p><a href="#">예약내역</a></p>
+                            <div class="rap">
+                                <div class="cal_header">
+                                   <div class="btn prevDay"></div>
+                                  <h2 class="dateTitle"></h2>
+                                  <div class="btn nextDay"></div>
+                                </div>
+                                
+                                <div class="grid dateHead">
+                                  <div>SUN</div>
+                                  <div>MON</div>
+                                  <div>THU</div>
+                                  <div>WED</div>
+                                  <div>THU</div>
+                                  <div>FRI</div>
+                                  <div>SAT</div>
+                                </div>
+                            
+                                <div class="grid dateBoard"></div>
+                                <script src="../js/hos.js"></script>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="main_right_box">
-                    <p class="logo_small">Plant <span>HOS & TEL</span></p>
-                    <div class="main_right_items">
-                        <p>Plant HOSTEL 이용방법!</p>
-                        <p>
-                            1. 반려식물의 병원예약은 HOS에서 가능합니다<br />
-                            2. 반려식물의 호텔예약은 TEL에서 가능합니다<br />
-                            3. 반려식물의 정보등록은 로그인을 한 후 등록합니다<br />
-                            4. 모든 서비스는 로그인을 하신 뒤 이용가능합니다
-                        </p>
-                    </div>
-                    <div class="right_last_items">
-                        <div class="right_half_items_left">
-                            <p class="items_title">반려식물 병원예약</p>
-                            <p class="items_link"><a href="#">HOS</a></p>
-                        </div>
-                        <div class="right_half_items_right">
-                            <p class="items_title">반려식물 호텔예약</p>
-                            <p class="items_link_white"><a href="#">TEL</a></p>
-                        </div>
-                    </div>
-                </div>
+                <!-- 병원 예약 파트 끝 -->
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
             </section>
             <!-- body의 전체 뼈대 끝 -->
@@ -115,7 +124,7 @@
         <!-- body 끝 -->
         <!-- footer -->
         <footer class="footer">
-            <div class="center_info_title">PLANT HOSTEL</div>
+            <div class="center_info_title">PALNT HOSTEL</div>
             <div class="center_info">
                 <span class="link"><a href="#">운영정책</a></span>
                 <span class="link"><a href="#">브랜드보호정책</a></span>

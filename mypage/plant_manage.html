@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 마이페이지</title>
+        <title>플랜트호스텔 | 반려식물 관리하기</title>
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/mypage/mypage.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
@@ -59,7 +59,7 @@
             );
         </script>
 
-        <!-- body [class명 body-wrapper]-->
+        <!-- body & footer [class명 body-wrapper]-->
         <div class="body-wrapper">
             <!-- body의 전체 뼈대 [class명 body-content] -->
             <!-- mypage는 요소를 세로로 나열하기 때문에 flex-direction을 column으로 설정 [class명 mypage-content] -->
@@ -75,14 +75,41 @@
                     </div>
                     <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
                     <div class="mypage_box">
-                        <ul class="mypage_list">
-                            <a href="./myinfo.html"><li>내 정보</li></a>
-                            <a href=""><li>반려식물 등록</li></a>
-                            <a href=""><li>예약 내역</li></a>
-                            <a href=""><li>이용 약관 / 개인정보방침</li></a>
-                            <a href=""><li>오픈소스 / 라이선스</li></a>
-                            <a href=""><li>설정</li></a>
-                        </ul>
+                        <div class="message">현재 등록된 반려식물은 총 3개 입니다. / care service 0개 진행중</div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">반려식물 별명1</div>
+                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
+                                정보 자세히 보기
+                            </button>
+                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
+                                식물 정보 수정
+                            </button>
+                        </div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">반려식물 별명2</div>
+                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
+                                정보 자세히 보기
+                            </button>
+                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
+                                식물 정보 수정
+                            </button>
+                        </div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">반려식물 별명3</div>
+                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
+                                정보 자세히 보기
+                            </button>
+                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
+                                식물 정보 수정
+                            </button>
+                        </div>
+                        <div class="btn_area">
+                            <button>케어 상담예약</button>
+                            <button onclick="location.href='./plant_regist.html'">반려식물 등록하기</button>
+                        </div>
                     </div>
                 </div>
                 <!-- 마이페이지 메인 박스 끝 -->
@@ -92,7 +119,7 @@
         <!-- body 끝 -->
         <!-- footer -->
         <footer class="footer">
-            <div class="center_info_title">PLANT HOSTEL</div>
+            <div class="center_info_title">PALNT HOSTEL</div>
             <div class="center_info">
                 <span class="link"><a href="#">운영정책</a></span>
                 <span class="link"><a href="#">브랜드보호정책</a></span>

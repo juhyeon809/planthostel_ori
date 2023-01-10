@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 마이페이지</title>
+        <title>플랜트호스텔 | 반려식물 등록하기</title>
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/mypage/mypage.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
@@ -59,14 +59,13 @@
             );
         </script>
 
-        <!-- body [class명 body-wrapper]-->
+        <!-- body & footer [class명 body-wrapper]-->
         <div class="body-wrapper">
             <!-- body의 전체 뼈대 [class명 body-content] -->
             <!-- mypage는 요소를 세로로 나열하기 때문에 flex-direction을 column으로 설정 [class명 mypage-content] -->
             <section class="body-content mypage-content">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
-
                 <!-- 마이페이지 메인 박스 [class명 main_box]-->
                 <div class="main_box">
                     <!-- 작게 보여질 내 정보 [class명 member_info_box] -->
@@ -75,14 +74,55 @@
                     </div>
                     <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
                     <div class="mypage_box">
-                        <ul class="mypage_list">
-                            <a href="./myinfo.html"><li>내 정보</li></a>
-                            <a href=""><li>반려식물 등록</li></a>
-                            <a href=""><li>예약 내역</li></a>
-                            <a href=""><li>이용 약관 / 개인정보방침</li></a>
-                            <a href=""><li>오픈소스 / 라이선스</li></a>
-                            <a href=""><li>설정</li></a>
+                        <div class="message">김사과 님의 소중한 반려식물의 정보를 수정해주세요!</div>
+                        <ul class="plant_info_list">
+                            <li class="plant_info_row">
+                                <label for="nickname">
+                                    <div class="label_title">반려식물 별명</div>
+                                    <input type="text" name="nickname" id="nickname" value="준인장" />
+                                </label>
+                            </li>
+                            <li class="plant_info_row">
+                                <label for="species">
+                                    <div class="label_title">종</div>
+                                    <input type="text" name="species" id="species" value="선인장" />
+                                </label>
+                            </li>
+                            <li class="plant_info_row">
+                                <label for="flowerpot_size">
+                                    <div class="label_title">화분사이즈</div>
+                                    <input type="text" name="flowerpot_size" id="flowerpot_size" value="소형" />
+                                </label>
+                            </li>
+                            <li class="plant_info_row">
+                                <label for="age">
+                                    <div class="label_title">나이</div>
+                                    <input type="text" name="age" id="age" value="3개월" />
+                                </label>
+                            </li>
+                            <li class="plant_info_row">
+                                <label for="disease">
+                                    <div class="label_title">보유 병명</div>
+                                    <input type="text" name="disease" id="disease" value="없음" />
+                                </label>
+                            </li>
+                            <li class="plant_info_row">
+                                <label for="watering">
+                                    <div class="label_title">물 주기</div>
+                                    <input type="text" name="watering" id="watering" value="2일에 한 번" />
+                                </label>
+                            </li>
+                            <li class="plant_info_row">
+                                <label for="etc">
+                                    <div class="label_title">그 외 정보</div>
+                                    <textarea class="etc_info" name="etc" id="etc"> </textarea>
+                                </label>
+                            </li>
                         </ul>
+                        <div class="btn_area">
+                            <button onclick="location.href='./plant_manage.html'">취소</button>
+                            <button>완료</button>
+                        </div>
                     </div>
                 </div>
                 <!-- 마이페이지 메인 박스 끝 -->
@@ -92,7 +132,7 @@
         <!-- body 끝 -->
         <!-- footer -->
         <footer class="footer">
-            <div class="center_info_title">PLANT HOSTEL</div>
+            <div class="center_info_title">PALNT HOSTEL</div>
             <div class="center_info">
                 <span class="link"><a href="#">운영정책</a></span>
                 <span class="link"><a href="#">브랜드보호정책</a></span>

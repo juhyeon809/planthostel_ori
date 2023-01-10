@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 색상표 */
+:root {
+    --color-green : #40A76F;
+    --color-darkgreen : #225439;
+    --color-ivory : #F9F9F9;
+    --color-black : #000000;
+}
+
+nav{
+    margin-bottom: 30px;
+}
+
+.pickup_box{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* main box */
+.logo_top{
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--color-darkgreen);
+    text-shadow: 2px 2px 2px rgba(64, 167, 111, 0.5);
+    margin: 30px;
+}
+
+.logo_top span{
+    color: var(--color-green);
+}
+
+.main_image_box{
+    width: 578px;
+    height: 353px;
+    background: url(../image/plant5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* pickup list box */
+.pickup_list_box{
+    width: 1000px;
+    background: var(--color-lightgray);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 10px 50px;
+    margin: 50px auto;
+}
+
+.pickup_text {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 40px;
+    color: var(--color-darkgreen);
+    text-align: center;
+    padding: 20px;
+}
+
+.pickup_items{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 각 item들 */
+.pickup_item{
+    margin: 20px;
+}
+
+.items_image{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.items_text{
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 30px;
+    color: var(--color-black);
+    text-align: center;
+}

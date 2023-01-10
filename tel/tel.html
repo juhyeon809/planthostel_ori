@@ -6,15 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>플랜트호스텔</title>
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/tel.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
         <!-- 2. header와 footer는 모든 페이지 통일 -->
         <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
         <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
         <!-- 5. css에 색상변수 만들어서 사용하기 -->
         <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
     </head>
     <body>
         <!-- header [class명 header]-->
@@ -39,12 +38,12 @@
                             <li><a href="#">이용안내</a></li>
                             <li><a href="#">이벤트</a></li>
                             <li><a href="#">오시는길</a></li>
-                            <li><a href="./mypage/mypage.html">내정보</a></li>
+                            <li><a href="#">내정보</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="menu_item">HOS</a></li>
-                    <li><a href="./tel/tel.html" class="menu_item">TEL</a></li>
-                    <li><a href="./login/login.html" class="menu_item">LOGIN</a></li>
+                    <li><a href="#" class="menu_item">TEL</a></li>
+                    <li><a href="#" class="menu_item">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
@@ -65,49 +64,48 @@
             <!-- body의 전체 뼈대 [class명 body-content] -->
             <section class="body-content index_box">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
-                <div class="main_box">
-                    <div class="Shortcuts">
-                        <div class="items">
-                            <p>Plant HOS & TEL이 궁금하다면?</p>
-                            <a href="#">자주 묻는 질문</a>
+                    <div class="main_box">
+                        <p class="logo_small">Plant <span>TEL</span></p>
+                        <div class="image_box">
+            
                         </div>
-                        <div class="items">
-                            <p>반려식물을 키우고 계신가요?</p>
-                            <a href="#">반려식물 등록하러 가기</a>
-                        </div>
-                        <div class="last_items">
-                            <div class="half_items">
-                                <p><a href="#">호스텔 내부시설</a></p>
-                            </div>
-                            <div class="half_items">
-                                <p><a href="#">예약내역</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="main_right_box">
-                    <p class="logo_small">Plant <span>HOS & TEL</span></p>
-                    <div class="main_right_items">
-                        <p>Plant HOSTEL 이용방법!</p>
-                        <p>
-                            1. 반려식물의 병원예약은 HOS에서 가능합니다<br />
-                            2. 반려식물의 호텔예약은 TEL에서 가능합니다<br />
-                            3. 반려식물의 정보등록은 로그인을 한 후 등록합니다<br />
-                            4. 모든 서비스는 로그인을 하신 뒤 이용가능합니다
-                        </p>
-                    </div>
-                    <div class="right_last_items">
-                        <div class="right_half_items_left">
-                            <p class="items_title">반려식물 병원예약</p>
-                            <p class="items_link"><a href="#">HOS</a></p>
+                        <div class="tel_box">
+                            <p>>반려식물 호텔 예약<</p>
+                            <div class="info_item">
+                                <p>회원정보</p>
+                                <div class="info_box">
+                                        이름: <span>김사과</span><br />
+                                        이메일: <span>apple@naver.com</span><br />
+                                        휴대폰 번호: <span>010-1234-5678</span><br />
+                                        반려식물 등록수: <span>3</span>
+                                </div>
+                            </div>
+                            <div class="reserve_item">
+                                <div class="name_box">
+                                    예약자 성함<br/>
+                                    <input type="text" name="name" placeholder="성함을 입력해주세요" style="border:0 solid black;"/>
+                                </div>
+
+                                <div class="phone_box">
+                                    예약자 휴대폰번호<br/>
+                                    <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요" style="border:0 solid black;"/>
+                                </div>
+                            </div>
+                            <div class="select_item">
+                                나의 반려식물 선택하기
+                                <select name="plant" style="border:0 solid black;">
+                                    <option value="plant_1"> 반려식물 1호, 죽순이 </option>
+                                    <option value="plant_2"> 반려식물 2호, 죽돌이 </option>
+                                    <option value="plant_3"> 반려식물 3호, 장민희 </option>
+                                </select>
+                            </div>
+                            <div class="notice_item">
+                                반려식물의 주의사항을 자세히 설명해주세요
+                                <input type="text" name="notice" placeholder="여러분의 소중한 반려식물의 원할한 관리에 도움이 됩니다." style="border:0 solid black;"/>
+                            </div>
                         </div>
-                        <div class="right_half_items_right">
-                            <p class="items_title">반려식물 호텔예약</p>
-                            <p class="items_link_white"><a href="#">TEL</a></p>
-                        </div>
                     </div>
-                </div>
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
             </section>
             <!-- body의 전체 뼈대 끝 -->
@@ -115,7 +113,7 @@
         <!-- body 끝 -->
         <!-- footer -->
         <footer class="footer">
-            <div class="center_info_title">PLANT HOSTEL</div>
+            <div class="center_info_title">PALNT HOSTEL</div>
             <div class="center_info">
                 <span class="link"><a href="#">운영정책</a></span>
                 <span class="link"><a href="#">브랜드보호정책</a></span>
