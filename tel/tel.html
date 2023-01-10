@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>플랜트호스텔</title>
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/tel.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
         <!-- 2. header와 footer는 모든 페이지 통일 -->
         <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
@@ -63,7 +64,48 @@
             <!-- body의 전체 뼈대 [class명 body-content] -->
             <section class="body-content index_box">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+                    <div class="main_box">
+                        <p class="logo_small">Plant <span>TEL</span></p>
+                        <div class="image_box">
+            
+                        </div>
 
+                        <div class="tel_box">
+                            <p>>반려식물 호텔 예약<</p>
+                            <div class="info_item">
+                                <p>회원정보</p>
+                                <div class="info_box">
+                                        이름: <span>김사과</span><br />
+                                        이메일: <span>apple@naver.com</span><br />
+                                        휴대폰 번호: <span>010-1234-5678</span><br />
+                                        반려식물 등록수: <span>3</span>
+                                </div>
+                            </div>
+                            <div class="reserve_item">
+                                <div class="name_box">
+                                    예약자 성함<br/>
+                                    <input type="text" name="name" placeholder="성함을 입력해주세요" style="border:0 solid black;"/>
+                                </div>
+
+                                <div class="phone_box">
+                                    예약자 휴대폰번호<br/>
+                                    <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요" style="border:0 solid black;"/>
+                                </div>
+                            </div>
+                            <div class="select_item">
+                                나의 반려식물 선택하기
+                                <select name="plant" style="border:0 solid black;">
+                                    <option value="plant_1"> 반려식물 1호, 죽순이 </option>
+                                    <option value="plant_2"> 반려식물 2호, 죽돌이 </option>
+                                    <option value="plant_3"> 반려식물 3호, 장민희 </option>
+                                </select>
+                            </div>
+                            <div class="notice_item">
+                                반려식물의 주의사항을 자세히 설명해주세요
+                                <input type="text" name="notice" placeholder="여러분의 소중한 반려식물의 원할한 관리에 도움이 됩니다." style="border:0 solid black;"/>
+                            </div>
+                        </div>
+                    </div>
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
             </section>
             <!-- body의 전체 뼈대 끝 -->
