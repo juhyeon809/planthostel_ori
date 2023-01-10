@@ -81,7 +81,7 @@ button {
 .body-content {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 section {

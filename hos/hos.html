@@ -1,0 +1,139 @@
+<!-- html 틀 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>플랜트호스텔 | 병원예약</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/hos/hos.css" />
+
+        <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
+        <!-- 2. header와 footer는 모든 페이지 통일 -->
+        <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
+        <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
+        <!-- 5. css에 색상변수 만들어서 사용하기 -->
+        <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
+    </head>
+    <body>
+        <!-- header [class명 header]-->
+        <header class="header">
+            <div class="header_box">
+                <a href="./index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
+            </div>
+        </header>
+        <!-- header 끝 -->
+
+        <nav>
+            <div class="container">
+                <ul class="menu_bar">
+                    <li class="sub_menu">
+                        <a href="#" class="menu_item">MENU</a>
+                        <ul class="sub_menu_ul">
+                            <li><a href="#">병원예약</a></li>
+                            <li><a href="#">호텔예약</a></li>
+                            <li><a href="#">픽업서비스</a></li>
+                            <li><a href="#">이용후기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">내정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu_item">HOS</a></li>
+                    <li><a href="#" class="menu_item">TEL</a></li>
+                    <li><a href="#" class="menu_item">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $("nav li").hover(
+                function () {
+                    $("ul", this).stop().slideDown(300);
+                },
+                function () {
+                    $("ul", this).stop().slideUp(300);
+                }
+            );
+        </script>
+
+        <!-- body [class명 body-wrapper]-->
+        <div class="body-wrapper">
+            <!-- body의 전체 뼈대 [class명 body-content] -->
+            <section class="body-content hos_box">
+                <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+                <!-- 식물병원 예약 타이틀 [class명 title_box] -->
+                <div class="title_box">
+                    <p class="title">PLANT <span class="title_color">HOS</span></p>
+                    <div class="img_box">
+                        <img src="../image/plant3.jpg" alt="병원 이미지">
+                    </div>
+                </div>
+                <!-- 식물병원 예약 타이틀 끝 -->
+                <!-- 병원 예약 파트 [class명 hos_reservation] -->
+                <div class="hos_reservation">
+                    <p class="hos_reservation_title">▷ 반려식물 병원 예약 ◁</p>
+                    <div class="hos_mini_box">
+                        <p class="sub_title">회원 정보</p>
+                        <div class="user_info">
+                            <p>이름 : <span>김사과</span></p>
+                            <p>이메일 : <span>apple@naver.com</span></p>
+                            <p>휴대폰번호 : <span>010 - 1111 - 1111</span></p>
+                            <p>반려식물 등록 수 : <span>3</span></p>
+                        </div>
+                    </div>
+                    <div class="hos_mini_box">
+                        <p class="sub_title">병원 방문 예정일을 선택해주세요</p>
+                        <div class="calendar">
+                            <p class="calendar_title">진료 가능날짜</p>
+                            <div class="date_YN">
+                                <span class="YN_box">가능</span>
+                                <span class="YN_box">불가능</span>
+                            </div>
+                            <div class="rap">
+                                <div class="cal_header">
+                                   <div class="btn prevDay"></div>
+                                  <h2 class="dateTitle"></h2>
+                                  <div class="btn nextDay"></div>
+                                </div>
+                                
+                                <div class="grid dateHead">
+                                  <div>SUN</div>
+                                  <div>MON</div>
+                                  <div>THU</div>
+                                  <div>WED</div>
+                                  <div>THU</div>
+                                  <div>FRI</div>
+                                  <div>SAT</div>
+                                </div>
+                            
+                                <div class="grid dateBoard"></div>
+                                <script src="../js/hos.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 병원 예약 파트 끝 -->
+                <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+            </section>
+            <!-- body의 전체 뼈대 끝 -->
+        </div>
+        <!-- body 끝 -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="center_info_title">PALNT HOSTEL</div>
+            <div class="center_info">
+                <span class="link"><a href="#">운영정책</a></span>
+                <span class="link"><a href="#">브랜드보호정책</a></span>
+                <span class="link"><a href="#">이용약관</a></span>
+                <span class="link"><a href="#">공지사항</a></span>
+                <span class="link"><a href="#">개인정보처리방침</a></span>
+            </div>
+            <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
+        </footer>
+        <!-- footer 끝 -->
+    </body>
+</html>
