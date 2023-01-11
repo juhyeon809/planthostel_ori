@@ -3,6 +3,10 @@
 @import url(./plant_manage.css);
 @import url(./plant_regist.css);
 @import url(./plant_detail.css);
+@import url(./reservation.css);
+@import url(./reservation_hos.css);
+@import url(./reservation_tel.css);
+@import url(./reservation_pickup.css);
 
 .menu_bar > li:last-child a {
     color: var(--color-green);
