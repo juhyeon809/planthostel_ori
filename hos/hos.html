@@ -31,20 +31,20 @@
                     <li class="sub_menu">
                         <a href="#" class="menu_item">MENU</a>
                         <ul class="sub_menu_ul">
-                            <li><a href="#">병원예약</a></li>
-                            <li><a href="#">호텔예약</a></li>
+                            <li><a href="./hos.html">병원예약</a></li>
+                            <li><a href="../tel/tel.html">호텔예약</a></li>
                             <li><a href="#">픽업서비스</a></li>
                             <li><a href="#">이용후기</a></li>
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">이용안내</a></li>
                             <li><a href="#">이벤트</a></li>
                             <li><a href="#">오시는길</a></li>
-                            <li><a href="#">내정보</a></li>
+                            <li><a href="../mypage/mypage.html">내정보</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="menu_item">HOS</a></li>
-                    <li><a href="#" class="menu_item">TEL</a></li>
-                    <li><a href="#" class="menu_item">LOGIN</a></li>
+                    <li><a href="./hos.html" class="menu_item">HOS</a></li>
+                    <li><a href="../tel/tel.html" class="menu_item">TEL</a></li>
+                    <li><a href="../login/login.html" class="menu_item">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,7 +63,7 @@
         <!-- body [class명 body-wrapper]-->
         <div class="body-wrapper">
             <!-- body의 전체 뼈대 [class명 body-content] -->
-            <section class="body-content hos_box">
+            <section class="body-content index_box">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
                 <div class="main_box">
                     <p class="logo_small">Plant <span>HOS</span></p>
@@ -71,7 +71,7 @@
         
                     </div>
 
-                    <div class="tel_box">
+                    <div class="hos_box">
                         <p class="sub_title">▷ 반려식물 병원 예약 ◁</p>
                         <div class="info_item">
                             <p class="sub_title">회원정보</p>
@@ -170,6 +170,18 @@
                                     <label><input type="radio" value="19:30" name="time"><div class="time_block">19:30</div></label>
                                 </div>
                             </div>
+                        </div>
+                        <div class="text_item">
+                            <p>-당일 픽업은 호텔비용이 추가되지 않습니다.</p>
+                            <P>-진료 시간 외의 방문은 상담이 어려울 수 있습니다.</P>
+                            <p>-12시간 이상 병원 및 호텔에 보관 시 시간 당 비용 2000원이 부과됩니다.</p>
+                            <p>-상태에 따라 진료 시간이 연장될 수 있습니다.</p>
+                            <p>-자세한 문의사항은 하단에 있는 연락처로 전화주세요.</p>
+
+                            <input type="checkbox" name="agree"/> <span>개인정보보호법에 따라 위와 같이 입력한 개인정보 수집 및 이용에 동의합니다.</span>
+                        </div>
+                        <div class="btn_area">
+                            <button>예약하기</button>
                         </div>
                     </div>
                 </div>
