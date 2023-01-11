@@ -8,6 +8,7 @@
         <title>플랜트호스텔</title>
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/tel/tel.css" />
+        <script defer src="../js/tel.js"></script>
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
         <!-- 2. header와 footer는 모든 페이지 통일 -->
         <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
@@ -128,14 +129,126 @@
                                           <div>FRI</div>
                                           <div>SAT</div>
                                         </div>
-                                    
                                         <div class="grid dateBoard"></div>
-                                        <script src="../js/hos.js"></script>
                                     </div>
                                 </div>
                             </div>
+                            <div class="time_item">
+                                <p class="sub_title">체크인 시간을 선택해주세요</p>
+                                <div class="time_box">
+                                    <div class="date_YN">
+                                        <span class="YN_box">가능</span>
+                                        <span class="YN_box">불가능</span>
+                                    </div>
+                                    <div class="flex_box">
+                                        <label><input type="radio" value="08:00" name="time"><div class="time_block">08:00</div></label>
+                                        <label><input type="radio" value="08:30" name="time"><div class="time_block">08:30</div></label>
+                                        <label><input type="radio" value="09:00" name="time"><div class="time_block">09:00</div></label>
+                                        <label><input type="radio" value="09:30" name="time"><div class="time_block">09:30</div></label>
+                                        <label><input type="radio" value="10:00" name="time"><div class="time_block">10:00</div></label>
+                                        <label><input type="radio" value="10:30" name="time"><div class="time_block">10:30</div></label>
+                                        <label><input type="radio" value="11:00" name="time"><div class="time_block">11:00</div></label>
+                                    </div>
+                                    <div class="flex_box">
+                                        <label><input type="radio" value="11:30" name="time"><div class="time_block">11:30</div></label>
+                                        <label><input type="radio" value="13:30" name="time"><div class="time_block">13:30</div></label>
+                                        <label><input type="radio" value="14:00" name="time"><div class="time_block">14:00</div></label>
+                                        <label><input type="radio" value="14:30" name="time"><div class="time_block">14:30</div></label>
+                                        <label><input type="radio" value="15:00" name="time"><div class="time_block">15:00</div></label>
+                                        <label><input type="radio" value="15:30" name="time"><div class="time_block">15:30</div></label>
+                                        <label><input type="radio" value="16:00" name="time"><div class="time_block">16:00</div></label>
+                                    </div>
+                                    <div class="flex_box">
+                                        <label><input type="radio" value="16:30" name="time"><div class="time_block">16:30</div></label>
+                                        <label><input type="radio" value="17:00" name="time"><div class="time_block">17:00</div></label>
+                                        <label><input type="radio" value="17:30" name="time"><div class="time_block">17:30</div></label>
+                                        <label><input type="radio" value="18:00" name="time"><div class="time_block">18:00</div></label>
+                                        <label><input type="radio" value="18:30" name="time"><div class="time_block">18:30</div></label>
+                                        <label><input type="radio" value="19:00" name="time"><div class="time_block">19:00</div></label>
+                                        <label><input type="radio" value="19:30" name="time"><div class="time_block">19:30</div></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tel_mini_box">
+                                <p class="sub_title">체크아웃 예정일을 선택해주세요</p>
+                                <div class="calendar">
+                                    <p class="calendar_title">체크아웃 가능날짜</p>
+                                    <div class="date_YN">
+                                        <span class="YN_box">가능</span>
+                                        <span class="YN_box">불가능</span>
+                                    </div>
+                                    <div class="rap">
+                                        <div class="cal_header">
+                                           <div class="btn prevDay"></div>
+                                          <h2 class="dateTitle"></h2>
+                                          <div class="btn nextDay"></div>
+                                        </div>
+                                        
+                                        <div class="grid dateHead">
+                                          <div>SUN</div>
+                                          <div>MON</div>
+                                          <div>THU</div>
+                                          <div>WED</div>
+                                          <div>THU</div>
+                                          <div>FRI</div>
+                                          <div>SAT</div>
+                                        </div>
+                                    
+                                        <div class="grid dateBoard"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time_item">
+                                <p class="sub_title">체크아웃 시간을 선택해주세요</p>
+                                <div class="time_box">
+                                    <div class="date_YN">
+                                        <span class="YN_box">가능</span>
+                                        <span class="YN_box">불가능</span>
+                                    </div>
+                                    <div class="flex_box">
+                                        <label><input type="radio" value="08:00" name="time"><div class="time_block">08:00</div></label>
+                                        <label><input type="radio" value="08:30" name="time"><div class="time_block">08:30</div></label>
+                                        <label><input type="radio" value="09:00" name="time"><div class="time_block">09:00</div></label>
+                                        <label><input type="radio" value="09:30" name="time"><div class="time_block">09:30</div></label>
+                                        <label><input type="radio" value="10:00" name="time"><div class="time_block">10:00</div></label>
+                                        <label><input type="radio" value="10:30" name="time"><div class="time_block">10:30</div></label>
+                                        <label><input type="radio" value="11:00" name="time"><div class="time_block">11:00</div></label>
+                                    </div>
+                                    <div class="flex_box">
+                                        <label><input type="radio" value="11:30" name="time"><div class="time_block">11:30</div></label>
+                                        <label><input type="radio" value="13:30" name="time"><div class="time_block">13:30</div></label>
+                                        <label><input type="radio" value="14:00" name="time"><div class="time_block">14:00</div></label>
+                                        <label><input type="radio" value="14:30" name="time"><div class="time_block">14:30</div></label>
+                                        <label><input type="radio" value="15:00" name="time"><div class="time_block">15:00</div></label>
+                                        <label><input type="radio" value="15:30" name="time"><div class="time_block">15:30</div></label>
+                                        <label><input type="radio" value="16:00" name="time"><div class="time_block">16:00</div></label>
+                                    </div>
+                                    <div class="flex_box">
+                                        <label><input type="radio" value="16:30" name="time"><div class="time_block">16:30</div></label>
+                                        <label><input type="radio" value="17:00" name="time"><div class="time_block">17:00</div></label>
+                                        <label><input type="radio" value="17:30" name="time"><div class="time_block">17:30</div></label>
+                                        <label><input type="radio" value="18:00" name="time"><div class="time_block">18:00</div></label>
+                                        <label><input type="radio" value="18:30" name="time"><div class="time_block">18:30</div></label>
+                                        <label><input type="radio" value="19:00" name="time"><div class="time_block">19:00</div></label>
+                                        <label><input type="radio" value="19:30" name="time"><div class="time_block">19:30</div></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_item">
+                                <p>-당일 픽업은 호텔비용이 추가되지 않습니다.</p>
+                                <P>-진료 시간 외의 방문은 상담이 어려울 수 있습니다.</P>
+                                <p>-12시간 이상 병원 및 호텔에 보관 시 시간 당 비용 2000원이 부과됩니다.</p>
+                                <p>-상태에 따라 진료 시간이 연장될 수 있습니다.</p>
+                                <p>-자세한 문의사항은 하단에 있는 연락처로 전화주세요.</p>
+
+                                <input type="checkbox" name="agree"/> <span>개인정보보호법에 따라 위와 같이 입력한 개인정보 수집 및 이용에 동의합니다.</span>
+                            </div>
+                            <div class="btn_area">
+                                <button>예약하기</button>
+                            </div>
                         </div>
                     </div>
+                    
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
             </section>
             <!-- body의 전체 뼈대 끝 -->

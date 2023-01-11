@@ -21,7 +21,6 @@
 
 .main_box {
     width: auto;
-    height: 5000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,5 +257,60 @@
        font-size: 20px;
        margin-top: 0px;
    }
+
+   /* 시간선택 */
+.time_box{
+    position: relative;
+    width: 796px;
+    height: 284px;
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 10px;
+    padding-top: 90px;
+}
+
+.flex_box{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 26px;
+    margin-bottom: 8px;
+}
+
+.flex_box input[type="radio"]{
+    display: none;
+}
+
+.time_block{
+    width: 100px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    font-family: "ONE-Mobile-POP";
+    font-weight: 400;
+    color: #191a19;
+}
+
+.text_item{
+    width: 572px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-weight: 100;
+    margin-left: -200px;
+    margin-top: 50px;
+
+}
+
+.btn_area button{
+    width: 796px;
+    height: 67px;
+    margin-top: 30px;
+    background: #286946;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+
   
 
