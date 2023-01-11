@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 반려식물 관리하기</title>
+        <title>플랜트호스텔 | 예약 내역</title>
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/mypage/mypage.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
@@ -76,42 +76,35 @@
                     <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
                     <div class="mypage_box">
                         <!-- mypage_box 내부 최상단에 보여질 메시지 [class명 message] -->
-                        <div class="message">현재 등록된 반려식물은 총 3개 입니다. / care service 0개 진행중</div>
-                        <!-- 반려식물 정보를 보여주기 위한 하나의 행 [class명 plant_info] -->
-                        <div class="plant_info">
-                            <div class="plant_nickname">반려식물 별명1</div>
-                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
-                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
-                                정보 자세히 보기
+                        <div class="message">김사과님의 예약 내역입니다.</div>
+                        <!-- 예약 내역을 보여주기 위한 한 행 [class명 reservation] -->
+                        <div class="reservation">
+                            <div class="reservation_date">2022.10.14 14:00</div>
+                            <input type="text" value="준인장, HOS" disabled />
+                            <button class="reservation_info_btn" onclick="location.href='./reservation_hos.html'">
+                                예약 정보
                             </button>
-                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
-                                식물 정보 수정
-                            </button>
+                            <button class="reservation_cancel_btn">예약 취소</button>
                         </div>
                         <div class="plant_info">
-                            <div class="plant_nickname">반려식물 별명2</div>
-                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
-                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
-                                정보 자세히 보기
+                            <div class="plant_nickname">2022.10.16 12:00</div>
+                            <input type="text" value="준인장 / TEL / shours" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./reservation_tel.html'">
+                                예약 정보
                             </button>
-                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
-                                식물 정보 수정
-                            </button>
+                            <button class="plant_modify_btn">예약 취소</button>
                         </div>
                         <div class="plant_info">
-                            <div class="plant_nickname">반려식물 별명3</div>
-                            <input type="text" value="선인장 / 소형 / 3일에 한번 물주기" disabled />
-                            <button class="plant_detail_btn" onclick="location.href='./plant_detail.html'">
-                                정보 자세히 보기
+                            <div class="plant_nickname">2022.10.17 15:00</div>
+                            <input type="text" value="매장 반려식물 픽업" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./reservation_pickup.html'">
+                                예약 정보
                             </button>
-                            <button class="plant_modify_btn" onclick="location.href='./plant_modify.html'">
-                                식물 정보 수정
-                            </button>
+                            <button class="plant_modify_btn">예약 취소</button>
                         </div>
                         <!-- 버튼을 배치하기 위한 레이아웃 [class명 btn_area] -->
                         <div class="btn_area">
-                            <button>케어 상담예약</button>
-                            <button onclick="location.href='./plant_regist.html'">반려식물 등록하기</button>
+                            <button onclick="location.href='./mypage.html'">뒤로가기</button>
                         </div>
                     </div>
                 </div>
