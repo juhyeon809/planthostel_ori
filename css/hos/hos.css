@@ -20,83 +20,126 @@
     font-style: normal;
 }
 
-.hos_box{
+.main_box {
+    width: auto;
+    height: 5000px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.title_box{
-    margin-bottom: 40px;
-}
-
-.title{
-    margin: 0 auto;
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 16px;
-    font-family: "ONE-Mobile-POP";
-    color: #286946;
-}
-
-.title_color{
-    color: #40A76F;
-}
-
-.img_box img{
-    width: 578px;
+.image_box {
+    width: 577px;
     height: 353px;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
+    background: url(../../image/plant4.jpg);
+    border-radius: 15px 15px 15px 15px;
 }
 
-.hos_reservation{
+.logo_small{
+    font-family: 'OKCHAN';
+    font-size: 20px;
+    color: var(--color-darkgreen);
+}
+
+.logo_small span{
+    color: var(--color-green);
+}
+
+.tel_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 936px;
-    height: 2498px;
-
-    background: rgba(249, 249, 249, 0.75);
+    height: 3778px;
+    margin-top: 30px;
+    background-color: var(--color-ivory);
+    padding: 50px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.hos_mini_box{
+.info_item{
+    width: 796px;
+    height: 186px;
+    text-align: center;
+}
+.info_box{
+    text-align: center;
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 15px 15px 15px 15px;
+    padding: 30px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+}
+
+.reserve_item{
+    display: flex;
+    margin-top: 50px;
+}
+.name_box, .phone_box{
+    margin: 7px;
+    width: 391px;
+}
+.name_box input, .phone_box input{
+    display: block;
+    margin: 0 auto;
+    width: 391px;
+    height: 65px;
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 15px;
+    text-indent: 10px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.select_item{
+    width: 796px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select_item select{
+    width: 796px;
+    height: 60px;
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.notice_item{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 796px;
+}
+.notice_item input{
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 15px;
+    height: 220px;
+    text-indent: 10px;
+    font-size: 30px;
+    word-wrap: break-word;  
+    word-break: break-all;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+}
+
+.tel_mini_box{
     margin: 0 auto;
 }
-
-.hos_reservation_title{
-    font-family: "ONE-Mobile-POP";
-    text-align: center;
-    margin-top: 30px;
-    font-size: 18px;
-}
-
 .sub_title{
     font-family: "ONE-Mobile-POP";
     text-align: center;
     margin-top: 30px;
-    font-size: 16px;
-}
-
-.user_info{
-    font-family: "GangwonEduSaeeum_OTFMediumA";
-    margin: 0 auto;
-    width: 796px;
-    height: 136px;
-    background: rgba(64, 167, 111, 0.2);
-    border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.user_info p{
-    text-align: center;
-    font-family: "GangwonEduSaeeum_OTFMediumA";
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 100;
 }
-
 .calendar{
     position: relative;
     margin: 0 auto;
@@ -107,13 +150,11 @@
     color: #303533;
     padding-bottom: 20px;
 }
-
 .date_YN{
     position: absolute;
     top: 30px;
     right: 26px;
 }
-
 .YN_box{
     font-family: "ONE-Mobile-POP";
     font-size: 14px;
@@ -125,7 +166,6 @@
     border-radius: 5px;
     padding: 10px 20px;
 }
-
 .calendar_title{
     text-align: center;
     font-family: "ONE-Mobile-POP";
@@ -134,88 +174,123 @@
     margin-bottom: 10px;
     font-weight: 500;
 }
-
 .YN_box:last-child{
     background: #B7DBC8;
 }
 
 /* 달력 */
 .dateHead div {
-  background: #D5E9DE;
-  color: #555D59;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 5px;
-  font-family: "ONE-Mobile-POP";
-}
-
-.grid div {
-  padding: .6rem;
-  font-size: .9rem;
-  cursor: pointer;
-}
-
-.noColor {
     background: #D5E9DE;
-    border: 2px solid #8BC8A6;
-}
+    color: #555D59;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    font-family: "ONE-Mobile-POP";
+  }
+  
+  .grid div {
+    padding: .6rem;
+    font-size: .9rem;
+    cursor: pointer;
+  }
+  
+  .noColor {
+      background: #D5E9DE;
+      border: 2px solid #8BC8A6;
+  }
+  
+  .dateBoard div {
+    color: #222;
+    font-weight: bold;
+    min-height: 4.5rem;
+    padding: .6rem .8rem;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .cal_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
 
-.dateBoard div {
-  color: #222;
-  font-weight: bold;
-  min-height: 4.5rem;
-  padding: .6rem .8rem;
-  border-radius: 10px;
-  background: #fff;
-}
-
-.cal_header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-}
-
+  
 /* 좌우 버튼 */
 .btn {
- display: block;
- width: 16px;
- height: 16px;
- border: 3px solid rgb(78, 78, 78);
- border-width: 3px 3px 0 0;
- cursor: pointer;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 3px solid rgb(78, 78, 78);
+    border-width: 3px 3px 0 0;
+    cursor: pointer;
+   }
+   
+   .prevDay {
+     transform: rotate(-135deg);
+   }
+   
+   .nextDay {
+     transform: rotate(45deg);
+   }
+   
+   /* ---- */
+   
+   @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+   
+   
+   .rap {
+     max-width: 820px;
+     padding: 0 1.4rem;
+     margin-top: 1.4rem;
+   }
+   
+   .dateHead {
+     margin: .4rem 0;
+   }
+   
+   .dateTitle{
+       font-family: "ONE-Mobile-POP";
+       font-weight: 400;
+       font-size: 20px;
+       margin-top: 0px;
+   }
+  
+/* 시간선택 */
+.time_box{
+    position: relative;
+    width: 796px;
+    height: 284px;
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 10px;
+    padding-top: 90px;
 }
 
-.prevDay {
-  transform: rotate(-135deg);
+.flex_box{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 26px;
+    margin-bottom: 8px;
 }
 
-.nextDay {
-  transform: rotate(45deg);
+.flex_box input[type="radio"]{
+    display: none;
 }
 
-/* ---- */
-
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-
-
-.rap {
-  max-width: 820px;
-  padding: 0 1.4rem;
-  margin-top: 1.4rem;
-}
-
-.dateHead {
-  margin: .4rem 0;
-}
-
-.dateTitle{
+.time_block{
+    width: 100px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
     font-family: "ONE-Mobile-POP";
     font-weight: 400;
-    font-size: 20px;
-    margin-top: 0px;
+    color: #191a19;
 }
