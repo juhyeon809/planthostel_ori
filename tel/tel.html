@@ -71,9 +71,9 @@
                         </div>
 
                         <div class="tel_box">
-                            <p>>반려식물 호텔 예약<</p>
+                            <p class="sub_title">>반려식물 호텔 예약<</p>
                             <div class="info_item">
-                                <p>회원정보</p>
+                                <p class="sub_title">회원정보</p>
                                 <div class="info_box">
                                         이름: <span>김사과</span><br />
                                         이메일: <span>apple@naver.com</span><br />
@@ -83,17 +83,17 @@
                             </div>
                             <div class="reserve_item">
                                 <div class="name_box">
-                                    예약자 성함<br/>
+                                    <p class="sub_title">예약자 성함</p>
                                     <input type="text" name="name" placeholder="성함을 입력해주세요" style="border:0 solid black;"/>
                                 </div>
 
                                 <div class="phone_box">
-                                    예약자 휴대폰번호<br/>
+                                    <p class="sub_title">예약자 휴대폰번호</p>
                                     <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요" style="border:0 solid black;"/>
                                 </div>
                             </div>
                             <div class="select_item">
-                                나의 반려식물 선택하기
+                                <p class="sub_title">나의 반려식물 선택하기</p>
                                 <select name="plant" style="border:0 solid black;">
                                     <option value="plant_1"> 반려식물 1호, 죽순이 </option>
                                     <option value="plant_2"> 반려식물 2호, 죽돌이 </option>
@@ -101,8 +101,38 @@
                                 </select>
                             </div>
                             <div class="notice_item">
-                                반려식물의 주의사항을 자세히 설명해주세요
+                                <p class="sub_title">반려식물의 주의사항을 자세히 설명해주세요</p>
                                 <input type="text" name="notice" placeholder="여러분의 소중한 반려식물의 원할한 관리에 도움이 됩니다." style="border:0 solid black;"/>
+                            </div>
+                            <div class="tel_mini_box">
+                                <p class="sub_title">체크인 예정일을 선택해주세요</p>
+                                <div class="calendar">
+                                    <p class="calendar_title">체크인 가능날짜</p>
+                                    <div class="date_YN">
+                                        <span class="YN_box">가능</span>
+                                        <span class="YN_box">불가능</span>
+                                    </div>
+                                    <div class="rap">
+                                        <div class="cal_header">
+                                           <div class="btn prevDay"></div>
+                                          <h2 class="dateTitle"></h2>
+                                          <div class="btn nextDay"></div>
+                                        </div>
+                                        
+                                        <div class="grid dateHead">
+                                          <div>SUN</div>
+                                          <div>MON</div>
+                                          <div>THU</div>
+                                          <div>WED</div>
+                                          <div>THU</div>
+                                          <div>FRI</div>
+                                          <div>SAT</div>
+                                        </div>
+                                    
+                                        <div class="grid dateBoard"></div>
+                                        <script src="../js/hos.js"></script>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
