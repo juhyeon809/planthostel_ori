@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 마이페이지</title>
+        <title>플랜트호스텔 | 예약 내역</title>
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/mypage/mypage.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
@@ -59,7 +59,7 @@
             );
         </script>
 
-        <!-- body [class명 body-wrapper]-->
+        <!-- body & footer [class명 body-wrapper]-->
         <div class="body-wrapper">
             <!-- body의 전체 뼈대 [class명 body-content] -->
             <!-- mypage는 요소를 세로로 나열하기 때문에 flex-direction을 column으로 설정 [class명 mypage-content] -->
@@ -75,15 +75,37 @@
                     </div>
                     <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
                     <div class="mypage_box">
-                        <!-- 마이페이지에서 다른 페이지로 이동하기 위한 버튼 리스트 [class명 mypage_list] -->
-                        <ul class="mypage_list">
-                            <a href="./myinfo.html"><li>내 정보</li></a>
-                            <a href="./plant_regist.html"><li>반려식물 등록</li></a>
-                            <a href="./reservation.html"><li>예약 내역</li></a>
-                            <a href=""><li>이용 약관 / 개인정보방침</li></a>
-                            <a href=""><li>오픈소스 / 라이선스</li></a>
-                            <a href=""><li>설정</li></a>
-                        </ul>
+                        <!-- mypage_box 내부 최상단에 보여질 메시지 [class명 message] -->
+                        <div class="message">김사과님의 예약 내역입니다.</div>
+                        <!-- 예약 내역을 보여주기 위한 한 행 [class명 reservation] -->
+                        <div class="reservation">
+                            <div class="reservation_date">2022.10.14 14:00</div>
+                            <input type="text" value="준인장, HOS" disabled />
+                            <button class="reservation_info_btn" onclick="location.href='./reservation_hos.html'">
+                                예약 정보
+                            </button>
+                            <button class="reservation_cancel_btn">예약 취소</button>
+                        </div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">2022.10.16 12:00</div>
+                            <input type="text" value="준인장 / TEL / shours" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./reservation_tel.html'">
+                                예약 정보
+                            </button>
+                            <button class="plant_modify_btn">예약 취소</button>
+                        </div>
+                        <div class="plant_info">
+                            <div class="plant_nickname">2022.10.17 15:00</div>
+                            <input type="text" value="매장 반려식물 픽업" disabled />
+                            <button class="plant_detail_btn" onclick="location.href='./reservation_pickup.html'">
+                                예약 정보
+                            </button>
+                            <button class="plant_modify_btn">예약 취소</button>
+                        </div>
+                        <!-- 버튼을 배치하기 위한 레이아웃 [class명 btn_area] -->
+                        <div class="btn_area">
+                            <button onclick="location.href='./mypage.html'">뒤로가기</button>
+                        </div>
                     </div>
                 </div>
                 <!-- 마이페이지 메인 박스 끝 -->
@@ -93,7 +115,7 @@
         <!-- body 끝 -->
         <!-- footer -->
         <footer class="footer">
-            <div class="center_info_title">PLANT HOSTEL</div>
+            <div class="center_info_title">PALNT HOSTEL</div>
             <div class="center_info">
                 <span class="link"><a href="#">운영정책</a></span>
                 <span class="link"><a href="#">브랜드보호정책</a></span>

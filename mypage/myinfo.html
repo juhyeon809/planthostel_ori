@@ -73,6 +73,7 @@
                         <div class="member_info_box">
                             ID : <span class="userid">회원1</span> / <span class="name">김사과님</span>
                         </div>
+                        <!-- mypage_box 상단에 버튼을 배치하기 위함 [class명 btn_area] -->
                         <div class="btn_area">
                             <button class="myinfo_modify_btn" onclick="location.href='./myinfo_modify.html'">
                                 내 정보 수정
@@ -84,7 +85,9 @@
                     </div>
                     <!-- 마이페이지의 모든 페이지에 사용될 박스 [class명 mypage_box] -->
                     <div class="mypage_box">
+                        <!-- 내 정보를 보여주는 input 박스를 list 형태로 배치 [class명 myinfo_list] -->
                         <ul class="myinfo_list">
+                            <!-- 내 정보의 하나의 행을 의미 [class명 myinfo_row] -->
                             <li class="myinfo_row">
                                 <label for="id">
                                     <div class="label_title">ID</div>
@@ -127,6 +130,7 @@
                                     <input type="text" name="hp" id="hp" value="010-1234-1234" disabled />
                                 </label>
                             </li>
+                            <!-- myinfo 화면에서는 우편번호 찾기 버튼이 불필요할 것 같아서 제거 -->
                             <li class="myinfo_row">
                                 <label for="zipcode">
                                     <div class="label_title">Zipcode</div>
