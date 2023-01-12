@@ -1,170 +1,208 @@
 <!-- html 틀 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 픽업예약</title>
-        <link rel="stylesheet" href="../css/pickup.css" />
-        <link rel="stylesheet" href="../css/common.css" />
-        <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
-        <!-- 2. header와 footer는 모든 페이지 통일 -->
-        <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
-        <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
-        <!-- 5. css에 색상변수 만들어서 사용하기 -->
-        <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
-    </head>
-    <body>
-        <!-- header [class명 header]-->
-        <header class="header">
-            <div class="header_box">
-                <a href="./index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
-            </div>
-        </header>
-        <!-- header 끝 -->
 
-        <nav>
-            <div class="container">
-                <ul class="menu_bar">
-                    <li class="sub_menu">
-                        <a href="#" class="menu_item">MENU</a>
-                        <ul class="sub_menu_ul">
-                            <li><a href="#">병원예약</a></li>
-                            <li><a href="#">호텔예약</a></li>
-                            <li><a href="#">픽업서비스</a></li>
-                            <li><a href="#">이용후기</a></li>
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">이용안내</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">오시는길</a></li>
-                            <li><a href="#">내정보</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="menu_item">HOS</a></li>
-                    <li><a href="#" class="menu_item">TEL</a></li>
-                    <li><a href="../login/login.html" class="menu_item">LOGIN</a></li>
-                </ul>
-            </div>
-        </nav>
-        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script>
-            $("nav li").hover(
-                function () {
-                    $("ul", this).stop().slideDown(300);
-                },
-                function () {
-                    $("ul", this).stop().slideUp(300);
-                }
-            );
-        </script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플랜트호스텔 | 픽업예약</title>
+    <link rel="stylesheet" href="../css/pickup/pickup.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
+    <!-- 2. header와 footer는 모든 페이지 통일 -->
+    <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
+    <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
+    <!-- 5. css에 색상변수 만들어서 사용하기 -->
+    <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
+</head>
 
-        <!-- body [class명 body-wrapper]-->
-        <div class="body-wrapper">
-            <!-- body의 전체 뼈대 [class명 body-content] -->
-            <section class="body-content pickup_box">
-                <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
-                <!-- 픽업페이지 메인 박스 [class명 main_box] -->
-                <div class="main_box">
-                    <p class="logo_top">PLANT  <span>Pick UP</span></p>
-                    <!-- 메인 이미지 박스 [class명 main_image_box] -->
-                    <div class="main_image_box"></div>
-                    <!-- 픽업 리스트 박스 [class명 pickup_list_box] -->
-                    <div class="pickup_list_box">
-                        <p class="pickup_text"> &gt; 반려식물 고르고 편하게 픽업! &lt; </p>
-                        <!-- 픽업 리스트 첫 번째 줄  -->
-                        <div class="pickup_items">
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (1).jpg" alt="픽업식물 1" >
-                                <p class="items_text"> 
-                                    픽업식물 1 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (2).jpg" alt="픽업식물 2" >
-                                <p class="items_text"> 
-                                    픽업식물 2 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (3).jpg" alt="픽업식물 3" >
-                                <p class="items_text"> 
-                                    픽업식물 3 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                        </div>
-                        <!-- 픽업 리스트 두 번째 줄  -->
-                        <div class="pickup_items">
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (4).jpg" alt="픽업식물 4" >
-                                <p class="items_text"> 
-                                    픽업식물 4 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (5).jpg" alt="픽업식물 5" >
-                                <p class="items_text"> 
-                                    픽업식물 5 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (6).jpg" alt="픽업식물 6" >
-                                <p class="items_text"> 
-                                    픽업식물 6 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                        </div>
-                        <!-- 픽업 리스트 세 번째 줄  -->
-                        <div class="pickup_items">
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (7).jpg" alt="픽업식물 7" >
-                                <p class="items_text"> 
-                                    픽업식물 7 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (8).jpg" alt="픽업식물 8" >
-                                <p class="items_text"> 
-                                    픽업식물 8 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                            <div class="pickup_item">
-                                <img class="items_image" src="../image/plant20 (9).jpg" alt="픽업식물 9" >
-                                <p class="items_text"> 
-                                    픽업식물 9 <br/>
-                                    15,000￦ / 소형
-                                </p>
-                            </div>
-                        </div>
-                        <!-- 픽업 예약 정보 -->
-                        
-                    </div>
-                
-            </section>
-            <!-- body의 전체 뼈대 끝 -->
+<body>
+    <!-- header [class명 header]-->
+    <header class="header">
+        <div class="header_box">
+            <a href="./index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
         </div>
-        <!-- body 끝 -->
-        <!-- footer -->
-        <footer class="footer" id="pickup_footer">
-            <div class="center_info_title">PALNT HOSTEL</div>
-            <div class="center_info">
-                <span class="link"><a href="#">운영정책</a></span>
-                <span class="link"><a href="#">브랜드보호정책</a></span>
-                <span class="link"><a href="#">이용약관</a></span>
-                <span class="link"><a href="#">공지사항</a></span>
-                <span class="link"><a href="#">개인정보처리방침</a></span>
+    </header>
+    <!-- header 끝 -->
+
+    <nav>
+        <div class="container">
+            <ul class="menu_bar">
+                <li class="sub_menu">
+                    <a href="#" class="menu_item">MENU</a>
+                    <ul class="sub_menu_ul">
+                        <li><a href="../hos/hos.html">병원예약</a></li>
+                        <li><a href="../tel/tel.html">호텔예약</a></li>
+                        <li><a href="../pickup/pickup.html">픽업서비스</a></li>
+                        <li><a href="#">이용후기</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="../mypage/mypage.html">내정보</a></li>
+                    </ul>
+                </li>
+                <li><a href="../hos/hos.html" class="menu_item">HOS</a></li>
+                <li><a href="../tel/tel.html" class="menu_item">TEL</a></li>
+                <li><a href="../login/login.html" class="menu_item">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $("nav li").hover(
+            function () {
+                $("ul", this).stop().slideDown(300);
+            },
+            function () {
+                $("ul", this).stop().slideUp(300);
+            }
+        );
+    </script>
+
+    <!-- body [class명 body-wrapper]-->
+    <div class="body-wrapper">
+        <!-- body의 전체 뼈대 [class명 body-content] -->
+        <section class="body-content pickup_box">
+            <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+            <!-- 픽업페이지 타이틀 [class명 main_box] -->
+            <div class="title_box">
+                <p class="title">PLANT <span>Pick UP</span></p>
+                <div class="title_image_box">
+                    <img src="../image/plant5.jpg" alt="픽업 이미지" />
+                </div>
             </div>
-            <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
-        </footer>
-        <!-- footer 끝 -->
-    </body>
+            <!-- 픽업페이지 타이틀 끝-->
+            <!-- 픽업 리스트 [class명 pickup_list_box] -->
+            <div class="pickup_list_box">
+                <p class="pickup_title"> &gt; 반려식물 고르고 편하게 픽업! &lt; </p>
+                <div class="pickup_list">
+                    <div class="pickup_items scroll_bar">
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (1).jpg" alt="픽업식물 1">
+                            <p class="items_text">
+                                픽업식물 1 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (2).jpg" alt="픽업식물 2">
+                            <p class="items_text">
+                                픽업식물 2 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (3).jpg" alt="픽업식물 3">
+                            <p class="items_text">
+                                픽업식물 3 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (4).jpg" alt="픽업식물 4">
+                            <p class="items_text">
+                                픽업식물 4 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (5).jpg" alt="픽업식물 5">
+                            <p class="items_text">
+                                픽업식물 5 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (6).jpg" alt="픽업식물 6">
+                            <p class="items_text">
+                                픽업식물 6 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (7).jpg" alt="픽업식물 7">
+                            <p class="items_text">
+                                픽업식물 7 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (8).jpg" alt="픽업식물 8">
+                            <p class="items_text">
+                                픽업식물 8 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                        <div class="pickup_item">
+                            <img class="items_image" src="../image/plant20 (9).jpg" alt="픽업식물 9">
+                            <p class="items_text">
+                                픽업식물 9 <br />
+                                15,000￦ / 소형
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 픽업 리스트 끝 -->
+                <!-- 픽업 예약 [class명 pickup_info_box] -->
+                <div class="pickup_info_box">
+                    <div class="pickup_info">
+                        <div class="info_small">
+                            <p class="info_title">예약자 성함</p>
+                            <div class="info_write_box">성함을 입력해주세요</div>
+                        </div>
+                        <div class="info_small">
+                            <p class="info_title">예약자 휴대폰 번호</p>
+                            <div class="info_write_box">번호를 입력해주세요</div>
+                        </div>
+                    </div>
+                    <div class="pickup_date">
+                        <p class="info_title">픽업 날짜와 시간을 선택해주세요</p>
+                        <div class="pickup_select">
+                            <div class="date_select_box">10월 (select)</div>
+                            <div class="date_select_box">29일 (select)</div>
+                            <div class="date_select_box">16:00</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 픽업 예약 끝 -->
+                <!-- 픽업 공지 [class명 pickup_notice] -->
+                <div class="pickup_notice">
+                    <ul>
+                        <li>택배 배송은 어렵습니다. 픽업만 가능합니다.</li>
+                        <li>정해진 픽업 날짜와 시간을 초과할 시, 예약이 자동 취소됩니다.</li>
+                        <li>픽업 예약을 신청할 시 플랜트호스텔과 제휴를 맺은 곳과의 연결을 통해 재고를 채워두는 시스템이니 취소환급금에 관한 연락이 있을 수 있으니 양해 부탁드립니다.</li>
+                        <li>화분의 사이즈에 따라 가격이 다를 수 있습니다.</li>
+                        <li>2개 이상 픽업 예약 시 10% 할인율이 적용됩니다.</li>
+                    </ul>
+                </div>
+                <!-- 픽업 공지 끝 -->
+                <!-- 픽업 예약 버튼 [class명 pickup_btn_box] -->
+                <div class="pickup_btn_box">
+                    <p class="agree">개인정보보호법에 따라 위와 같이 입력한 개인정보 수집 및 이용에 동의합니다.</p>
+                    <div class="pickup_btn">픽업 예약하기</div>
+                </div>
+            </div>
+
+        </section>
+        <!-- body의 전체 뼈대 끝 -->
+    </div>
+    <!-- body 끝 -->
+    <!-- footer -->
+    <footer class="footer" id="pickup_footer">
+        <div class="center_info_title">PALNT HOSTEL</div>
+        <div class="center_info">
+            <span class="link"><a href="#">운영정책</a></span>
+            <span class="link"><a href="#">브랜드보호정책</a></span>
+            <span class="link"><a href="#">이용약관</a></span>
+            <span class="link"><a href="#">공지사항</a></span>
+            <span class="link"><a href="#">개인정보처리방침</a></span>
+        </div>
+        <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
+    </footer>
+    <!-- footer 끝 -->
+</body>
+
 </html>

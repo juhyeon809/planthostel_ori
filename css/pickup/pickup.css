@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "ONE-Mobile-POP";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 색상표 */
+:root {
+    --color-green: #40A76F;
+    --color-darkgreen: #225439;
+    --color-ivory: #F9F9F9;
+    --color-black: #000000;
+    --color-ligthgray: rgb(249, 249, 249);
+    --color-gray: rgb(0, 0, 0, 0.6);
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+.pickup_box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* title box */
+.title_box {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: 'ONE-Mobile-POP';
+    font-size: 30px;
+    color: var(--color-darkgreen);
+    margin: 30px;
+}
+
+.title span {
+    color: var(--color-green);
+}
+
+.title_image_box img {
+    width: 578px;
+    height: 353px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+/* pickup list box */
+.pickup_list_box {
+    width: 936px;
+    background: var(--color-lightgray);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.pickup_title {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 30px;
+    color: var(--color-darkgreen);
+    text-align: center;
+    padding: 20px;
+}
+
+.pickup_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.scroll_bar {
+    width: auto;
+    height: 900px;
+    overflow-y: scroll;
+}
+
+/* 아래의 모든 코드는 영역::코드로 사용 */
+.scroll_bar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll_bar::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 스크롤바의 길이 */
+    background: var(--color-darkgreen);
+    /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+
+/* 각 item들 */
+.pickup_item {
+    margin: 10px;
+}
+
+.items_image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.items_text {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 30px;
+    color: var(--color-black);
+    text-align: center;
+    margin: 20px;
+}
+
+/* 픽업 예약 정보 */
+.pickup_info_box {
+    margin: 50px;
+    align-items: center;
+}
+
+/* 픽업 예약자 성함 & 번호 */
+.pickup_info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info_small {
+    margin: 10px
+}
+
+.info_title {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 30px;
+    margin: 10px;
+}
+
+.info_write_box {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+    width: 391px;
+    height: 47px;
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+/* 픽업 날짜 & 시간 선택 */
+.pickup_date {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.pickup_select {
+    display: flex;
+    justify-content: center;
+}
+
+.date_select_box {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+    width: 256px;
+    height: 47px;
+    background: rgba(64, 167, 111, 0.2);
+    border-radius: 10px;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+/* 픽업 안내사항 */
+.pickup_notice {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 23px;
+    color: var(--color-gray);
+    text-align: left;
+    margin: 70px 50px;
+}
+
+.pickup_notice li {
+    list-style: square;
+}
+
+/* 개인정보보호법 동의 */
+
+.pickup_btn_box{
+    margin: 60px;
+    align-items: center;
+}
+
+.agree {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 23px;
+    color: var(--color-gray);
+    text-align: left;
+}
+
+/* 픽업 예약하기 버튼 */
+.pickup_btn {
+    height: 57px;   
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 40px;
+    color: var(--color-ivory);
+    background: var(--color-darkgreen);
+    border-radius: 10px;
+    padding-top: 20px;
+}
