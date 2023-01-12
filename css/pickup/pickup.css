@@ -63,6 +63,9 @@ nav {
     background: var(--color-lightgray);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pickup_title {
@@ -120,37 +123,34 @@ nav {
 }
 
 /* 픽업 예약 정보 */
-.pickup_info_box {
-    margin: 50px;
-    align-items: center;
-}
-
-/* 픽업 예약자 성함 & 번호 */
-.pickup_info {
+.reserve_item {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-.info_small {
-    margin: 10px
+.name_box, .phone_box{
+    margin: 7px;
+    width: 391px;
 }
 
-.info_title {
+.sub_title {
     font-family: 'GangwonEduSaeeum_OTFMediumA';
     font-size: 30px;
     margin: 10px;
 }
 
-.info_write_box {
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
-    font-size: 20px;
+.name_box input, .phone_box input {
+    display: block;
+    margin: 0 auto;
     width: 391px;
-    height: 47px;
+    height: 65px;
     background: rgba(64, 167, 111, 0.2);
-    border-radius: 10px;
-    padding-top: 10px;
+    border-radius: 15px;
+    text-indent: 10px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* 픽업 날짜 & 시간 선택 */
@@ -158,9 +158,10 @@ nav {
     display: block;
     justify-content: center;
     text-align: center;
+    margin: 30px
 }
 
-.pickup_select {
+.select_item{
     display: flex;
     justify-content: center;
 }
@@ -177,39 +178,44 @@ nav {
 }
 
 /* 픽업 안내사항 */
-.pickup_notice {
+.pickup_text {
+    width: 750px;
     font-family: 'GangwonEduSaeeum_OTFMediumA';
     font-size: 23px;
     color: var(--color-gray);
+    margin-left: -40px;
+    margin-top: 50px;
     text-align: left;
-    margin: 70px 50px;
 }
 
-.pickup_notice li {
-    list-style: square;
+.pickup_text p {
+    margin: 10px 0;
 }
+
 
 /* 개인정보보호법 동의 */
-
 .pickup_btn_box{
-    margin: 60px;
-    align-items: center;
+    display: block;
+    margin: 10px 60px 40px;
+    align-items: baseline;
+    text-align: left;
 }
 
-.agree {
+.pickup_btn_box span {
     font-family: 'GangwonEduSaeeum_OTFMediumA';
-    font-size: 23px;
+    font-size: 25px;
     color: var(--color-gray);
-    text-align: left;
 }
 
 /* 픽업 예약하기 버튼 */
-.pickup_btn {
-    height: 57px;   
+.pickup_btn button {
+    width: 796px;
+    height: 67px;
+    margin-top: 30px;
+    background: #286946;
+    border-radius: 15px;
+    color: #fff;
     font-family: 'GangwonEduSaeeum_OTFMediumA';
     font-size: 40px;
-    color: var(--color-ivory);
-    background: var(--color-darkgreen);
-    border-radius: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
