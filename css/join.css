@@ -81,7 +81,7 @@ a:hover {
 .join_box input{
     display: block;
     margin: 0 auto;
-    width: 396px;
+    width: 328px;
     height: 65px;
     background: rgba(255, 255, 255, 0.5);
     border: 3px solid rgba(64, 167, 111, 0.5);
@@ -96,6 +96,7 @@ a:hover {
 .join_box input[type="password"]{
     font-family: '맑은 고딕';
     font-size: 14px;
+    width: 328px;
 }
 
 .join_box input::placeholder{
@@ -118,19 +119,31 @@ a:hover {
     border-radius: 15px;
     margin-top: 15px;
     border: none;
-    font-family: 'OKCHAN';
+    font-family: 'ONE-Mobile-POP';
     color: white;
     font-size: 20px;
     font-weight: 500;
 }
 
 .join_box p{
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-family: 'ONE-Mobile-POP';
     font-size: 16px;
+    line-height: 4;
+    margin-left: 36px;
 }
 
-.join_box p span{
-    color: var(--color-green);
-    text-decoration: underline;
-    font-weight: 500;
+.sub_item{
+    width: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.join_box p{
+    display: flex;
+    font-size: 18px;
+    font-family: "ONE-Mobile-POP";
+}
+
+.input_user{
+    margin: 0 auto;
 }
