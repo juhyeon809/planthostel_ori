@@ -60,7 +60,7 @@ nav {
 /* pickup list box */
 .pickup_list_box {
     width: 936px;
-    background: var(--color-lightgray);
+    background-color: var(--color-ivory);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     display: flex;
