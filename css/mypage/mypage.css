@@ -76,3 +76,15 @@ input:disabled {
 input {
     height: 50px;
 }
+
+input:hover,
+input:active,
+input:focus {
+    outline: none;
+}
+
+textarea:hover,
+textarea:active,
+textarea:focus {
+    outline: none;
+}
