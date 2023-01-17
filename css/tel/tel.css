@@ -48,7 +48,6 @@
     flex-direction: column;
     align-items: center;
     width: 936px;
-    height: 3778px;
     margin-top: 30px;
     background-color: var(--color-ivory);
     padding: 50px;
@@ -202,7 +201,7 @@
       border: 2px solid #8BC8A6;
   }
   
-  .dateBoard div {
+  .dateBoard div, .dateBoard2 div {
     color: #222;
     font-weight: bold;
     min-height: 4.5rem;
@@ -228,11 +227,11 @@
     cursor: pointer;
    }
    
-   .prevDay {
+   .prevDay, .prevDay2 {
      transform: rotate(-135deg);
    }
    
-   .nextDay {
+   .nextDay, .nextDay2 {
      transform: rotate(45deg);
    }
    
@@ -251,7 +250,7 @@
      margin: .4rem 0;
    }
    
-   .dateTitle{
+   .dateTitle, .dateTitle2{
        font-family: "ONE-Mobile-POP";
        font-weight: 400;
        font-size: 20px;
@@ -311,6 +310,3 @@
     color: #fff;
     font-size: 15px;
 }
-
-  
-
