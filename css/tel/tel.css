@@ -67,8 +67,6 @@
     background: rgba(64, 167, 111, 0.2);
     border-radius: 15px 15px 15px 15px;
     padding: 30px;
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
-    font-size: 20px;
 }
 
 .reserve_item{
@@ -86,9 +84,6 @@
     height: 65px;
     background: rgba(64, 167, 111, 0.2);
     border-radius: 15px;
-    text-indent: 10px;
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
-    font-size: 25px;
     margin-top: 10px;
     text-align: center;
 }
@@ -106,7 +101,6 @@
     height: 60px;
     background: rgba(64, 167, 111, 0.2);
     border-radius: 15px;
-    font-size: 15px;
     text-align: center;
 }
 
@@ -121,10 +115,8 @@
     border-radius: 15px;
     height: 220px;
     text-indent: 10px;
-    font-size: 30px;
     word-wrap: break-word;  
     word-break: break-all;
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
 }
 
 .tel_mini_box{
@@ -294,11 +286,9 @@
 
 .text_item{
     width: 572px;
-    font-family: 'GangwonEduSaeeum_OTFMediumA';
-    font-weight: 100;
+    font-size: 15px;
     margin-left: -200px;
     margin-top: 50px;
-
 }
 
 .btn_area button{
@@ -308,5 +298,4 @@
     background: #286946;
     border-radius: 15px;
     color: #fff;
-    font-size: 15px;
 }
