@@ -20,6 +20,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "GangwonEdu_OTFBoldA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* 색상표 */
 :root {
     --color-green: #40a76f;
@@ -230,4 +237,9 @@ nav ul li a {
 
 .link > a {
     color: white;
+}
+
+/* 본문 폰트 클래스 */
+.content_font {
+    font-family: "GangwonEdu_OTFBoldA";
 }
