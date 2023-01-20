@@ -1,0 +1,207 @@
+<!-- html 틀 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>플랜트호스텔 | FAQ</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/faq/faq.css" />
+
+        <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
+        <!-- 2. header와 footer는 모든 페이지 통일 -->
+        <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
+        <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
+        <!-- 5. css에 색상변수 만들어서 사용하기 -->
+        <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
+    </head>
+    <body>
+        <!-- header [class명 header]-->
+        <header class="header">
+            <div class="header_box">
+                <a href="../index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
+                <nav>
+                    <div class="container">
+                        <ul class="menu_bar">
+                            <li class="sub_menu">
+                                <a href="#" class="menu_item">MENU</a>
+                                <ul class="sub_menu_ul">
+                                    <li><a href="./hos.html">병원예약</a></li>
+                                    <li><a href="../tel/tel.html">호텔예약</a></li>
+                                    <li><a href="#">픽업서비스</a></li>
+                                    <li><a href="#">이용후기</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                    <li><a href="../mypage/mypage.html">내정보</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./hos.html" class="menu_item">HOS</a></li>
+                            <li><a href="../tel/tel.html" class="menu_item">TEL</a></li>
+                            <li><a href="../login/login.html" class="menu_item">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- header 끝 -->
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $("nav li").hover(
+                function () {
+                    $("ul", this).stop().slideDown(300);
+                },
+                function () {
+                    $("ul", this).stop().slideUp(300);
+                }
+            );
+        </script>
+
+        <!-- body [class명 body-wrapper]-->
+        <div class="body-wrapper">
+            <!-- body의 전체 뼈대 [class명 body-content] -->
+            <section class="body-content index_box">
+                <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+                <div class="main_box">
+                    <p class="logo_small">Plant <span>HOS</span></p>
+                    <div class="image_box">
+        
+                    </div>
+
+                    <div class="hos_box">
+                        <p class="sub_title">▷ 반려식물 병원 예약 ◁</p>
+                        <div class="info_item">
+                            <p class="sub_title">회원정보</p>
+                            <div class="info_box">
+                                    이름: <span>김사과</span><br />
+                                    이메일: <span>apple@naver.com</span><br />
+                                    휴대폰 번호: <span>010-1234-5678</span><br />
+                                    반려식물 등록수: <span>3</span>
+                            </div>
+                        </div>
+                        <div class="reserve_item">
+                            <div class="name_box">
+                                <p class="sub_title">예약자 성함</p>
+                                <input type="text" name="name" placeholder="성함을 입력해주세요" style="border:0 solid black;"/>
+                            </div>
+
+                            <div class="phone_box">
+                                <p class="sub_title">예약자 휴대폰번호</p>
+                                <input type="text" name="phonenumber" placeholder="휴대폰 번호를 입력해주세요" style="border:0 solid black;"/>
+                            </div>
+                        </div>
+                        <div class="select_item">
+                            <p class="sub_title">나의 반려식물 선택하기</p>
+                            <select name="plant" style="border:0 solid black;">
+                                <option value="plant_1"> 반려식물 1호, 죽순이 </option>
+                                <option value="plant_2"> 반려식물 2호, 죽돌이 </option>
+                                <option value="plant_3"> 반려식물 3호, 장민희 </option>
+                            </select>
+                        </div>
+                        <div class="notice_item">
+                            <p class="sub_title">반려식물의 상태를 자세히 설명해주세요</p>
+                            <input type="text" name="notice" placeholder="원활한 진료를 위해 반려식물의 상태를 상세하게 작성해주세요." style="border:0 solid black;"/>
+                        </div>
+                        <div class="tel_mini_box">
+                            <p class="sub_title">병원 방문 예정일을 선택해주세요</p>
+                            <div class="calendar">
+                                <p class="calendar_title">진료 가능날짜</p>
+                                <div class="date_YN">
+                                    <span class="YN_box">가능</span>
+                                    <span class="YN_box">불가능</span>
+                                </div>
+                                <div class="rap">
+                                    <div class="cal_header">
+                                       <div class="btn prevDay"></div>
+                                      <h2 class="dateTitle"></h2>
+                                      <div class="btn nextDay"></div>
+                                    </div>
+                                    
+                                    <div class="grid dateHead">
+                                      <div>SUN</div>
+                                      <div>MON</div>
+                                      <div>THU</div>
+                                      <div>WED</div>
+                                      <div>THU</div>
+                                      <div>FRI</div>
+                                      <div>SAT</div>
+                                    </div>
+                                
+                                    <div class="grid dateBoard"></div>
+                                    <script src="../js/hos.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="time_item">
+                            <p class="sub_title">진료 시간을 선택해주세요</p>
+                            <div class="time_box">
+                                <div class="date_YN">
+                                    <span class="YN_box">가능</span>
+                                    <span class="YN_box">불가능</span>
+                                </div>
+                                <div class="flex_box">
+                                    <label><input type="radio" value="08:00" name="time"><div class="time_block">08:00</div></label>
+                                    <label><input type="radio" value="08:30" name="time"><div class="time_block">08:30</div></label>
+                                    <label><input type="radio" value="09:00" name="time"><div class="time_block">09:00</div></label>
+                                    <label><input type="radio" value="09:30" name="time"><div class="time_block">09:30</div></label>
+                                    <label><input type="radio" value="10:00" name="time"><div class="time_block">10:00</div></label>
+                                    <label><input type="radio" value="10:30" name="time"><div class="time_block">10:30</div></label>
+                                    <label><input type="radio" value="11:00" name="time"><div class="time_block">11:00</div></label>
+                                </div>
+                                <div class="flex_box">
+                                    <label><input type="radio" value="11:30" name="time"><div class="time_block">11:30</div></label>
+                                    <label><input type="radio" value="13:30" name="time"><div class="time_block">13:30</div></label>
+                                    <label><input type="radio" value="14:00" name="time"><div class="time_block">14:00</div></label>
+                                    <label><input type="radio" value="14:30" name="time"><div class="time_block">14:30</div></label>
+                                    <label><input type="radio" value="15:00" name="time"><div class="time_block">15:00</div></label>
+                                    <label><input type="radio" value="15:30" name="time"><div class="time_block">15:30</div></label>
+                                    <label><input type="radio" value="16:00" name="time"><div class="time_block">16:00</div></label>
+                                </div>
+                                <div class="flex_box">
+                                    <label><input type="radio" value="16:30" name="time"><div class="time_block">16:30</div></label>
+                                    <label><input type="radio" value="17:00" name="time"><div class="time_block">17:00</div></label>
+                                    <label><input type="radio" value="17:30" name="time"><div class="time_block">17:30</div></label>
+                                    <label><input type="radio" value="18:00" name="time"><div class="time_block">18:00</div></label>
+                                    <label><input type="radio" value="18:30" name="time"><div class="time_block">18:30</div></label>
+                                    <label><input type="radio" value="19:00" name="time"><div class="time_block">19:00</div></label>
+                                    <label><input type="radio" value="19:30" name="time"><div class="time_block">19:30</div></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_item">
+                            <p>-당일 픽업은 호텔비용이 추가되지 않습니다.</p>
+                            <P>-진료 시간 외의 방문은 상담이 어려울 수 있습니다.</P>
+                            <p>-12시간 이상 병원 및 호텔에 보관 시 시간 당 비용 2000원이 부과됩니다.</p>
+                            <p>-상태에 따라 진료 시간이 연장될 수 있습니다.</p>
+                            <p>-자세한 문의사항은 하단에 있는 연락처로 전화주세요.</p>
+
+                            <input type="checkbox" name="agree"/> <span>개인정보보호법에 따라 위와 같이 입력한 개인정보 수집 및 이용에 동의합니다.</span>
+                        </div>
+                        <div class="btn_area">
+                            <button>예약하기</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 병원 예약 파트 끝 -->
+                <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+            </section>
+            <!-- body의 전체 뼈대 끝 -->
+        </div>
+        <!-- body 끝 -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="center_info_title">PALNT HOSTEL</div>
+            <div class="center_info">
+                <span class="link"><a href="#">운영정책</a></span>
+                <span class="link"><a href="#">브랜드보호정책</a></span>
+                <span class="link"><a href="#">이용약관</a></span>
+                <span class="link"><a href="#">공지사항</a></span>
+                <span class="link"><a href="#">개인정보처리방침</a></span>
+            </div>
+            <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
+        </footer>
+        <!-- footer 끝 -->
+    </body>
+</html>

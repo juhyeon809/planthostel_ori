@@ -1,0 +1,15 @@
+.header {
+    height: 149px;
+    min-height: 149px;
+}
+
+.header_box a {
+    margin-top: 0;
+}
+
+nav {
+    background: none;
+    position: relative;
+    top: 70px;
+    min-height: 70px;
+}
