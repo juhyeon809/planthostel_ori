@@ -242,6 +242,11 @@ nav ul li a {
 /* 본문 폰트 클래스 */
 .content_font {
     font-family: "GangwonEdu_OTFBoldA";
-    font-weight: 300;
     font-size: 18px;
+}
+
+/* 서브타이틀 폰트 클래스 */
+.subtitle_font {
+    font-family: "ONE-Mobile-POP";
+    font-size: 20px;
 }
