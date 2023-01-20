@@ -29,7 +29,6 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     padding: 10px 30px;
-    font-size: 16px;
 }
 
 .plant_info_row .etc_info {
@@ -40,7 +39,6 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     padding: 10px;
-    font-size: 16px;
     height: 180px;
     resize: none;
 }

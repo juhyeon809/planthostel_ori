@@ -5,9 +5,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>플랜트호스텔 | 로그인</title>
+        <title>플랜트호스텔 | 오시는 길</title>
         <link rel="stylesheet" href="../css/common.css" />
-        <link rel="stylesheet" href="../css/join.css" />
+        <link rel="stylesheet" href="../css/visit.css" />
         <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
         <!-- 2. header와 footer는 모든 페이지 통일 -->
         <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
@@ -38,12 +38,12 @@
                             <li><a href="#">이용안내</a></li>
                             <li><a href="#">이벤트</a></li>
                             <li><a href="#">오시는길</a></li>
-                            <li><a href="./mypage.html">내정보</a></li>
+                            <li><a href="./mypage/mypage.html">내정보</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="menu_item">HOS</a></li>
                     <li><a href="#" class="menu_item">TEL</a></li>
-                    <li><a href="../login/login.html" class="menu_item">LOGIN</a></li>
+                    <li><a href="../join/join.html" class="menu_item">LOGOUT</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,82 +62,44 @@
         <!-- body & footer [class명 body-wrapper]-->
         <div class="body-wrapper">
             <!-- body의 전체 뼈대 [class명 body-content] -->
-            <section class="body-content join-content">
+            <!-- info 페이지는 요소를 세로로 나열하기 때문에 flex-direction을 column으로 설정 [class명 info-content] -->
+            <section class="body-content visit-content">
                 <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
                 <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
-                <div class="logo_top">
-                    <p>Plant <span class="logo_top_span">HOS & TEL</span></p>
+                <div class="top_logo subtitle_font">오시는길</div>
+                <!--* 카카오맵 - 약도서비스
+	                * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+	                * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.-->
+
+                <div class="visit_box">
+                    <!-- 1. 약도 노드 -->
+                    <div
+                        id="daumRoughmapContainer1674196218298"
+                        class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!-- 2. 설치 스크립트 -->
+                    <script
+                        charset="UTF-8"
+                        class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            timestamp: "1674196218298",
+                            key: "2dhot",
+                            mapWidth: "640",
+                            mapHeight: "360"
+                        }).render();
+                    </script>
                 </div>
-                <form class="join_box" action="../index.html">
-                    <p class="input_user">
-                        <span class="sub_item">ID</span>
-                        <input
-                            type="text"
-                            name="id"
-                            id="id"
-                            maxlength="20"
-                            placeholder="아이디를 입력해주세요"
-                            required />
-                    </p>
-                    <p class="input_user">
-                        <span class="sub_item">PW</span>
-                        <input
-                            type="password"
-                            name="pw"
-                            id="pw"
-                            maxlength="20"
-                            placeholder="비밀번호를 입력해주세요"
-                            required />
-                    </p>
-                    <p class="input_user">
-                        <span class="sub_item">RE</span>
-                        <input
-                            type="password"
-                            name="pw_re"
-                            id="pw_re"
-                            maxlength="20"
-                            placeholder="비밀번호를 한번 더 입력해주세요"
-                            required />
-                    </p>
-                    <p class="input_user">
-                        <span class="sub_item">NAME</span>
-                        <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            maxlength="8"
-                            placeholder="이름을 입력해주세요"
-                            required />
-                    </p>
-                    <p class="input_user">
-                        <span class="sub_item">H.P</span>
-                        <input
-                            type="tel"
-                            name="hp"
-                            id="hp"
-                            maxlength="8"
-                            placeholder="휴대폰 번호를 입력해주세요"
-                            required />
-                    </p>
-                    <p class="input_user">
-                        <span class="sub_item">H.P</span>
-                        <input
-                            type="text"
-                            name="zip"
-                            id="zip"
-                            maxlength="8"
-                            placeholder="우편번호를 입력해주세요"
-                            required />
-                    </p>
-                    <button type="submit" value="JOIN">JOIN</button>
-                    <p>아직 회원이 아니신가요? <span class="go_join">회원가입</span></p>
-                </form>
             </section>
             <!-- body의 전체 뼈대 끝 -->
         </div>
+        <!-- body 끝 -->
         <!-- footer -->
         <footer class="footer">
-            <div class="center_info_title">PLANT HOSTEL</div>
+            <div class="center_info_title">PALNT HOSTEL</div>
             <div class="center_info">
                 <span class="link"><a href="#">운영정책</a></span>
                 <span class="link"><a href="#">브랜드보호정책</a></span>
@@ -148,6 +110,5 @@
             <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
         </footer>
         <!-- footer 끝 -->
-        <!-- body & footer 끝 -->
     </body>
 </html>

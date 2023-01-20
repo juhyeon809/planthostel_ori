@@ -1,0 +1,171 @@
+<!-- html 틀 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>플랜트호스텔 | 이용 안내</title>
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/info.css" />
+        <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
+        <!-- 2. header와 footer는 모든 페이지 통일 -->
+        <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
+        <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
+        <!-- 5. css에 색상변수 만들어서 사용하기 -->
+        <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
+    </head>
+    <body>
+        <!-- header [class명 header]-->
+        <header class="header">
+            <div class="header_box">
+                <a href="../index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
+            </div>
+        </header>
+        <!-- header 끝 -->
+
+        <nav>
+            <div class="container">
+                <ul class="menu_bar">
+                    <li class="sub_menu">
+                        <a href="#" class="menu_item">MENU</a>
+                        <ul class="sub_menu_ul">
+                            <li><a href="#">병원예약</a></li>
+                            <li><a href="#">호텔예약</a></li>
+                            <li><a href="#">픽업서비스</a></li>
+                            <li><a href="#">이용후기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="./visit.html">오시는길</a></li>
+                            <li><a href="./mypage/mypage.html">내정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu_item">HOS</a></li>
+                    <li><a href="#" class="menu_item">TEL</a></li>
+                    <li><a href="../join/join.html" class="menu_item">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $("nav li").hover(
+                function () {
+                    $("ul", this).stop().slideDown(300);
+                },
+                function () {
+                    $("ul", this).stop().slideUp(300);
+                }
+            );
+        </script>
+
+        <!-- body & footer [class명 body-wrapper]-->
+        <div class="body-wrapper">
+            <!-- body의 전체 뼈대 [class명 body-content] -->
+            <!-- info 페이지는 요소를 세로로 나열하기 때문에 flex-direction을 column으로 설정 [class명 info-content] -->
+            <section class="body-content info_content">
+                <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+                <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+                <!-- 본문 최상단 PLANT HOS&TEL을 처리하기 위함 [class명 top_logo] -->
+                <div class="top_logo subtitle_font">PLANT<span> HOS&TEL</span></div>
+                <!-- 이미지를 넣기 위함 [class명 big_imamge] -->
+                <div class="big_image"></div>
+                <!-- 이용안내 페이지 그림 아래 본문을 담기 위한 박스 [class명 info_box] -->
+                <div class="info_box content_font">
+                    <div class="info_box_row">
+                        <span>당신의 반려식물, 이제는 케어를 받을 수 있습니다!</span>
+                        <!-- 초록색 배경을 갖는 박스 [class명 green_box] -->
+                        <div class="green_box">
+                            <p>
+                                최근들어 플랜테리어가 인테리어에 접목되면서 반려식물이라는 키워드가 떠오르고 있죠.<br />
+                                근데 식물은 아프다고 말도 못하고, 잘 크고 있는건지 육안으로 확인하기에는 한계가
+                                있습니다.<br />
+                                <br />반려동물을 위한 병원과 간식매장, 케어서비스 등은 우리도 알다싶이 쉽게 접근할 수
+                                있습니다. <br /><br />이 점을 착안하여 저희 플랜트호스텔은 반려식물에게 맞는 1:1 케어와
+                                장시간의 보관 및 케어가 필요할 경우 반려식물 호텔 서비스를 이용하여 여러분들의
+                                고민거리를 해결하고 싶습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="service_guide">＞ 서비스는 이렇게 진행됩니다 ＜</span>
+                    <div class="info_box_row">
+                        <div class="service_box">
+                            <div class="absolute_box">
+                                <div class="top_logo subtitle_font">PLANT<span> HOS&TEL</span></div>
+                                <div class="small_logo subtitle_font">service</div>
+                                <div>
+                                    <p>1. 반려식물 상태 진단 및 케어</p>
+                                    <p>2. 반려식물 약 처방</p>
+                                    <p>3. 호텔 서비스를 통한 장시간 관리</p>
+                                    <p>4. 반려식물 및 플랜테리어 매장 오픈</p>
+                                    <p>5. 반려식물 질병 예방 검진 서비스</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="store_guide">＞ plant store <span>OPEN</span> ＜</span>
+                    <div class="info_box_row">
+                        <div class="store_box">
+                            <div class="absolute_box">
+                                <div class="top_logo subtitle_font">PLANT<span> HOS&TEL</span></div>
+                                <div class="small_logo subtitle_font">pick up!</div>
+                                <div>
+                                    <p>
+                                        1. 다육 식물부터 계절에 따라 유행하는<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;식물들을 모두 찾아보실 수 있습니다.
+                                    </p>
+                                    <p>
+                                        2. 혹시나 찾으시는 식물이 없다면, 주문 <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;및 예약 픽업 가능합니다.
+                                    </p>
+                                    <p>3. 인테리어용 식물 견적 상담 가능!</p>
+                                    <p>4. 1+1 이벤트 진행중입니다.^^</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="gifts_guide">＞ OPEN 기념 사은품 증정 ＜</span>
+                    <div class="info_box_gifts_row">
+                        <div class="left_box">
+                            <div class="image_box_left"></div>
+                            <div class="image_box_left_content">
+                                <p>
+                                    해당 이벤트는 오픈 기념 이벤트로<br />
+                                    선착순 100명 마감 또는 조기 소진 시 <br />
+                                    공지 없이 종료될 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right_box">
+                            <div class="image_box_right_content">
+                                <p>
+                                    아로마, 로즈, 라벤더 등의 꽃잎 추출물을 <br />
+                                    이용한 피로회복 오일 및 그 외 다양한 사은품들을 <br />
+                                    반려식물 호텔 서비스 or 케어 서비스 or 매장픽업을 <br />
+                                    이용해주신 분들께 무료로 제공합니다!
+                                </p>
+                            </div>
+                            <div class="image_box_right"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- body의 전체 뼈대 끝 -->
+        </div>
+        <!-- body 끝 -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="center_info_title">PALNT HOSTEL</div>
+            <div class="center_info">
+                <span class="link"><a href="#">운영정책</a></span>
+                <span class="link"><a href="#">브랜드보호정책</a></span>
+                <span class="link"><a href="#">이용약관</a></span>
+                <span class="link"><a href="#">공지사항</a></span>
+                <span class="link"><a href="#">개인정보처리방침</a></span>
+            </div>
+            <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
+        </footer>
+        <!-- footer 끝 -->
+    </body>
+</html>
