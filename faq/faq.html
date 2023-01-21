@@ -1,0 +1,110 @@
+<!-- html 틀 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플랜트호스텔 | FAQ</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/faq/faq.css" />
+
+    <!-- 1. 각 section 시작과 끝 주석으로 달기 -->
+    <!-- 2. header와 footer는 모든 페이지 통일 -->
+    <!-- 3. 각 section의 클래스명은 주석으로 같이 써놓기 -->
+    <!-- 4. 그룹화 또는 통일시켜야 하는 경우를 대비해 class로 css 작업 -->
+    <!-- 5. css에 색상변수 만들어서 사용하기 -->
+    <!-- 6. 버튼 클래스 변수는 임의의 변수 뒤에 _btn 붙여주기 (ex. file_btn, image_btn ...) -->
+</head>
+
+<body>
+    <!-- header [class명 header]-->
+    <header class="header">
+        <div class="header_box">
+            <a href="../index.html" class="logo">PLANT <span class="logo_white">HOS&TEL</span></a>
+            <nav>
+                <div class="container">
+                    <ul class="menu_bar">
+                        <li class="sub_menu">
+                            <a href="#" class="menu_item">MENU</a>
+                            <ul class="sub_menu_ul">
+                                <li><a href="./hos.html">병원예약</a></li>
+                                <li><a href="../tel/tel.html">호텔예약</a></li>
+                                <li><a href="#">픽업서비스</a></li>
+                                <li><a href="#">이용후기</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">오시는길</a></li>
+                                <li><a href="../mypage/mypage.html">내정보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./hos.html" class="menu_item">HOS</a></li>
+                        <li><a href="../tel/tel.html" class="menu_item">TEL</a></li>
+                        <li><a href="../login/login.html" class="menu_item">LOGIN</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header 끝 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $("nav li").hover(
+            function () {
+                $("ul", this).stop().slideDown(300);
+            },
+            function () {
+                $("ul", this).stop().slideUp(300);
+            }
+        );
+    </script>
+
+    <!-- body [class명 body-wrapper]-->
+    <div class="body-wrapper">
+        <!-- body의 전체 뼈대 [class명 body-content] -->
+        <section class="body-content index_box">
+            <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
+            <div class="title_box">
+                <p class="text">플랜트호스텔 서비스를 이용해주셔서 감사합니다. 도움이 필요하신가요?</p>
+
+                <p class="title">PLANT <span>HOSTEL FAQ</span></p>
+                <p class="text darkgreen">운영시간 : 평일 오전 8시 ~ 오후 8시</p>
+                <div class="ask_box">
+                    <button class="ask_btn">
+                        <img class="call" src="../image/telephone.png" alt="">
+                        <p>031-234-5678</p>
+                    </button>
+                    <button class="ask_btn">
+                        <p>1:1 문의하기</p>
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="main_box">
+
+            </div>
+            <!-- 병원 예약 파트 끝 -->
+            <!-- *** 각 페이지 퍼블리싱은 이부분에 하면 됩니다 *** -->
+        </section>
+        <!-- body의 전체 뼈대 끝 -->
+    </div>
+    <!-- body 끝 -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="center_info_title">PALNT HOSTEL</div>
+        <div class="center_info">
+            <span class="link"><a href="#">운영정책</a></span>
+            <span class="link"><a href="#">브랜드보호정책</a></span>
+            <span class="link"><a href="#">이용약관</a></span>
+            <span class="link"><a href="#">공지사항</a></span>
+            <span class="link"><a href="#">개인정보처리방침</a></span>
+        </div>
+        <div class="center_info">@planthostel | 010 - 1234 - 1234</div>
+    </footer>
+    <!-- footer 끝 -->
+</body>
+
+</html>

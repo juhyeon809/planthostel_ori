@@ -46,6 +46,6 @@ function sample6_execDaumPostcode() {
             document.getElementById("sample6_detailAddress").value = "";
             // 커서를 상세주소 필드로 이동한다.
             document.getElementById("sample6_detailAddress").focus();
-        },
+        }
     }).open();
 }
