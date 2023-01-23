@@ -67,14 +67,13 @@
         <!-- body의 전체 뼈대 [class명 body-content] -->
         <section class="body-content index_box">
             <!-- 그림자가 있는 박스 테두리가 필요할 경우 [class명 box] / 특정부분에 추가로 css를 넣을경우 해당 부분에 주석을 달고 임의의 변수 설정 -->
-            <!-- 픽업페이지 타이틀 [class명 main_box] -->
+            <!-- 픽업페이지[class명 main_box] -->
             <div class="main_box">
                     <p class="title">PLANT <span>Pick UP</span></p>
                     <div class="title_image_box">
                         <img src="../image/plant5.jpg" alt="픽업 이미지" />
                     </div>
-                <!-- 픽업페이지 타이틀 끝-->
-                <!-- 픽업 리스트 [class명 pickup_list_box] -->
+                <!-- 픽업 리스트 [class명 pickup_box] -->
                 <div class="pickup_box">
                     <p class="sub_title">▷ 반려식물 고르고 편하게 픽업! ◁</p>
                     <div class="pickup_list">
@@ -145,7 +144,7 @@
                         </div>
                     </div>
                     <!-- 픽업 리스트 끝 -->
-                    <!-- 픽업 예약 [class명 pickup_info_box] -->
+                    <!-- 픽업 예약 (성함, 번호) [class명 reserve_item] -->
                     <div class="reserve_item">
                         <div class="name_box">
                             <p class="sub_title">예약자 성함</p>
@@ -156,6 +155,7 @@
                             <input type="text" name="phone" placeholder="번호를 입력해주세요" style="border:0 solid black;">
                         </div>
                     </div>
+                    <!-- 픽업 예약 (날짜, 시간) [class명 pickup_date] -->
                     <div class="pickup_date">
                         <p class="sub_title">픽업 날짜와 시간을 선택해주세요</p>
                         <div class="select_item">
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                     <!-- 픽업 예약 끝 -->
-                    <!-- 픽업 공지 [class명 pickup_notice] -->
+                    <!-- 픽업 공지 [class명 pickup_text] -->
                     <div class="pickup_text">
                         <p>- 택배 배송은 어렵습니다. 픽업만 가능합니다.</p>
                         <p>- 정해진 픽업 날짜와 시간을 초과할 시, 예약이 자동 취소됩니다.</p>
@@ -184,8 +184,10 @@
                             <button>픽업 예약하기</button>
                         </div>
                     </div>
+                    <!-- 픽업 예약 버튼 끝 -->
                 </div>
             </div>
+            <!-- 픽업페이지 끝-->
         </section>
         <!-- body의 전체 뼈대 끝 -->
     </div>
