@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFLightA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* header */
 .header {
@@ -29,6 +35,10 @@ section {
     padding: 0;
 }
 
+.index_box {
+    display: block;
+}
+
 /* title box */
 .title_box {
     width: 100%;
@@ -53,8 +63,9 @@ section {
 }
 
 .text {
-    font-family: 'GangwonEdu_OTFBoldA';
+    font-family: 'GangwonEdu_OTFLightA';
     font-size: 23px;
+    font-weight: 700;
 }
 
 .darkgreen {
@@ -77,8 +88,9 @@ section {
     background-color: white;
     border: 4px solid var(--color-mint);
     border-radius: 100px;
-    font-family: 'GangwonEdu_OTFBoldA';
+    font-family: 'GangwonEdu_OTFLightA';
     font-size: 22px;
+    font-weight: 700;
     margin-right: 44px;
     color: var(--color-darkgreen);
 }
@@ -95,3 +107,50 @@ button p {
     margin-right: 10px;
 }
 
+/* main box */
+.main_box {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 180px;
+}
+
+.category_box {
+    margin-top: 60px;
+}
+
+.category_btn {
+    width: 141px;
+    height: 81px;
+    font-family: 'GangwonEdu_OTFLightA';
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--color-darkgreen);
+    padding-top: 10px;
+    border: 2px solid var(--color-lightgreen);
+}
+
+.green_btn {
+    background-color: var(--color-lightgreen);
+}
+
+.white_btn {
+    background-color: white;
+}
+
+/* faq box */
+.faq_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 936px;
+    margin-top: 60px;
+    background-color: var(--color-ivory);
+    padding: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 15px 15px;
+    font-family: 'GangwonEdu_OTFLightA';
+    font-size: 22px;
+    font-weight: 300;
+}
