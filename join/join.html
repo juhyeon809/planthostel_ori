@@ -77,7 +77,8 @@
                             id="id"
                             maxlength="20"
                             placeholder="아이디를 입력해주세요"
-                            required />
+                            required 
+                            class="input1"/>
                     </p>
                     <p class="input_user">
                         <span class="sub_item">PW</span>
@@ -87,7 +88,8 @@
                             id="pw"
                             maxlength="20"
                             placeholder="비밀번호를 입력해주세요"
-                            required />
+                            required 
+                            class="input1"/>
                     </p>
                     <p class="input_user">
                         <span class="sub_item">RE</span>
@@ -97,7 +99,8 @@
                             id="pw_re"
                             maxlength="20"
                             placeholder="비밀번호를 한번 더 입력해주세요"
-                            required />
+                            required 
+                            class="input1"/>
                     </p>
                     <p class="input_user">
                         <span class="sub_item">NAME</span>
@@ -107,7 +110,8 @@
                             id="name"
                             maxlength="8"
                             placeholder="이름을 입력해주세요"
-                            required />
+                            required 
+                            class="input1"/>
                     </p>
                     <p class="input_user">
                         <span class="sub_item">H.P</span>
@@ -117,20 +121,72 @@
                             id="hp"
                             maxlength="8"
                             placeholder="휴대폰 번호를 입력해주세요"
-                            required />
+                            required
+                            class="input2" />
+                        <button class="btn1">check</button>
                     </p>
                     <p class="input_user">
-                        <span class="sub_item">H.P</span>
+                        <span class="sub_item">ZIP</span>
                         <input
                             type="text"
                             name="zip"
                             id="zip"
                             maxlength="8"
                             placeholder="우편번호를 입력해주세요"
-                            required />
+                            required 
+                            class="input2"/>
+                        <button class="btn1">search</button>
                     </p>
-                    <button type="submit" value="JOIN">JOIN</button>
-                    <p>아직 회원이 아니신가요? <span class="go_join">회원가입</span></p>
+                    <p class="input_user">
+                        <span class="sub_item">ADD</span>
+                        <input
+                            type="text"
+                            name="add"
+                            id="add"
+                            maxlength="8"
+                            placeholder="주소를 입력해주세요"
+                            required 
+                            class="input1"/>
+                    </p>
+                    <input
+                        type="text"
+                        name="add"
+                        id="add"
+                        maxlength="8"
+                        placeholder="상세주소를 입력해주세요"
+                        required 
+                        class="input3"/>
+                    <input
+                        type="text"
+                        name="add"
+                        id="add"
+                        maxlength="8"
+                        placeholder="주소 참고사항을 적어주세요"
+                        required 
+                        class="input3"/>
+                    <p class="input_user">
+                        <span class="sub_item">EM</span>
+                        <input
+                            type="email"
+                            name="add"
+                            id="add"
+                            maxlength="8"
+                            placeholder="이메일을 입력해주세요"
+                            required 
+                            class="input1"/>
+                    </p>
+
+                    <div class="agree">
+                        <label><input type="checkbox"><span>약관에 모두 동의합니다.</span></label>
+                        <label><input type="checkbox"><span>서비스 이용약관 동의(필수)</span><a href="">보기</a></label>
+                        <label><input type="checkbox"><span>개인정보 수집 및 이용 동의(필수)</span><a href="">보기</a></label>
+                        <label><input type="checkbox"><span>개인정보 제 3자 제공 동의(필수)</span><a href="">보기</a></label>
+                        <label><input type="checkbox"><span>마케팅 수신 동의(선택)</span><a href="">보기</a></label>
+                        <label><input type="checkbox"><span>개인정보 수집 및 이용 안내(선택)</span><a href="">보기</a></label>
+                    </div>
+                    
+                    <button type="submit" value="JOIN" class="btnJoin">JOIN</button>
+                    <p class="join">아직 회원이 아니신가요?<span class="go_join">회원가입</span></p>
                 </form>
             </section>
             <!-- body의 전체 뼈대 끝 -->
