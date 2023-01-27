@@ -74,12 +74,11 @@ a:hover {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     padding-top: 70px;
-    margin: 0 auto;
+
     margin-bottom: 50px;
 }
 
-.join_box input{
-    display: block;
+.input1{
     margin: 0 auto;
     width: 328px;
     height: 65px;
@@ -87,6 +86,35 @@ a:hover {
     border: 3px solid rgba(64, 167, 111, 0.5);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+}
+
+.input2{
+    width: 238px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(64, 167, 111, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+}
+
+.input3{
+    margin: 0 auto;
+    width: 328px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(64, 167, 111, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: 60px;
     margin-bottom: 20px;
     text-indent: 10px;
     font-family: 'GangwonEduSaeeum_OTFMediumA';
@@ -109,11 +137,24 @@ a:hover {
     outline: none;
 }
 
-.join_box button{
+.btn1{
+    width: 85px;
+    height: 72px;
+    margin-left: 10px;
+    background: rgba(64, 167, 111, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    border: none;
+    font-family: 'ONE-Mobile-POP';
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btnJoin{
     box-sizing: border-box;
     width: 396px;
     height: 65.5px;
-
     background: rgba(64, 167, 111, 0.5);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -146,4 +187,30 @@ a:hover {
 
 .input_user{
     margin: 0 auto;
+}
+
+.agree{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+}
+
+.agree input{
+    margin-right: 50px;
+}
+
+.agree span{
+    display: inline-block;
+    width: 200px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.join{
+    justify-content: center;
 }
