@@ -42,7 +42,7 @@ section {
 /* title box */
 .title_box {
     width: 100%;
-    height : 300px;
+    height: 300px;
     background-color: var(--color-lightgreen);
     display: block;
     text-align: center;
@@ -72,7 +72,7 @@ section {
     color: var(--color-darkgreen);
 }
 
-.ask_box{
+.ask_box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +102,7 @@ button p {
 .call {
     width: 22px;
     height: 22px;
-    filter: opacity(0.4) drop-shadow(0 0 0 var(--color-darkgreen)); 
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--color-darkgreen));
     padding-top: 0;
     margin-right: 10px;
 }
@@ -140,17 +140,118 @@ button p {
 }
 
 /* faq box */
-.faq_box{
+.faq_box {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 936px;
     margin-top: 60px;
     background-color: var(--color-ivory);
-    padding: 50px;
+    padding: 30px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px 15px 15px 15px;
     font-family: 'GangwonEdu_OTFLightA';
     font-size: 22px;
     font-weight: 300;
+    align-items: center;
+}
+
+/* 스크롤바 */
+.scroll_bar {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.scroll_bar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll_bar::-webkit-scrollbar-thumb {
+    /* 스크롤바의 길이 */
+    height: 20%;
+    /* 스크롤바의 색상 */
+    background: var(--color-darkgreen);
+    border-radius: 10px;
+}
+
+.que {
+    position: relative;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 23px;
+    border-bottom: 1px solid var(--color-green);
+    width: 850px;
+}
+
+.que::before {
+    display: inline-block;
+    font-size: 14px;
+    color: #006633;
+    margin: 0 5px;
+}
+
+.que.on>span {
+    font-weight: bold;
+    color: #006633;
+}
+
+.ans {
+    display: none;
+    overflow: hidden;
+    font-size: 14px;
+    width: 800px;
+    
+    background-color: var(--color-mint);
+    padding: 27px 0;
+}
+
+.ans::before {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin: 0 5px;
+}
+
+.arrow_wrap {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -90%);
+}
+
+.arrow-top {
+    display: none;
+
+}
+
+.arrow-top > img {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--color-darkgreen));
+    transform: rotate(-90deg);
+}
+
+.arrow-bottom > img {
+    width: 20px;
+    height: 20px;
+    padding-top: 1rem;
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--color-darkgreen));
+    transform: rotate(90deg);
+}
+
+.arrow-bottom {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../image/arrow.png);
+}
+
+.que.on .arrow-bottom {
+    display: none;
+}
+
+.que.on .arrow-top {
+    display: block;
 }
